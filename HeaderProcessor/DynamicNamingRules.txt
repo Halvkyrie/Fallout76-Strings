@@ -1,0 +1,1225 @@
+﻿#Do Not Edit
+[version=3]
+[StartHeader]
+	Tag_0=default
+	Tag_1=SharedItemTags
+	Template_0=defaultTemplate,*
+[EndHeader]
+[StartRule]
+	Header=>GUNS
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>UNIQUE
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s@5
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=SharedItemTags
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=ekwd|customitemname
+	Include_1=form|dn_commongun|002377CF
+	Include_2=kwd_|@@xKWD:INNRgrp_5|00FFFFF6
+[EndRule]
+
+[StartRule]
+	Header= - QUNQ
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=SharedItemTags
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=5
+	regex=
+	Include_0=kwd_|CustomItemName_BunkerBuster|00471874
+	Include_1=kwd_|CustomItemName_CivilUnrest|00471875
+	Include_2=kwd_|CustomItemName_Daisycutter|00471876
+	Include_3=kwd_|CustomItemName_MindOverMatter|005EC267
+	Include_4=kwd_|CustomItemName_Plasma_W05MQR|00592E5A
+	Include_5=kwd_|CustomItemName_Pyrolyzer|00471879
+	Include_6=kwd_|CustomItemName_ShatteredGrounds|0072AEB8
+	Include_7=kwd_|CustomItemName_SomersetSpecial|0047187B
+	Include_8=kwd_|CustomItemName_TheFactFinder|005D0342
+	Include_9=kwd_|CustomItemName_TickettoRevenge|0072AEBC
+[EndRule]
+
+[StartRule]
+	Header= - EUNQ
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=SharedItemTags
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=5
+	regex=
+	Include_0=kwd_|CustomItemName_AnchorageAce|0076E83E
+	Include_1=kwd_|CustomItemName_BurningLove|0067A473
+	Include_2=kwd_|CustomItemName_CrowdControl|0064D001
+	Include_3=kwd_|CustomItemName_DoctorsOrders|0064D002
+	Include_4=kwd_|CustomItemName_EldersMark|006A0088
+	Include_5=kwd_|CustomItemName_FoundationsVengeance|0064781E
+	Include_6=kwd_|CustomItemName_GrandFinale|006696F8
+	Include_7=kwd_|CustomItemName_GunthersRevolver|0066957B
+	Include_8=kwd_|CustomItemName_HolyFire|006A008A
+	Include_9=kwd_|CustomItemName_LoveTap|0067A472
+	Include_10=kwd_|CustomItemName_PiratePunch|0064CFFF
+	Include_11=kwd_|CustomItemName_RedTerror_Copy01|0072AEB9
+	Include_12=kwd_|CustomItemName_TheDebilitator|0064D003
+	Include_13=kwd_|CustomItemName_TheKabloom|0069255F
+	Include_14=kwd_|CustomItemName_ToneDeath|0064D000
+	Include_15=kwd_|CustomItemName_V63-BERTHA|0072AEB3
+	Include_16=kwd_|CustomItemName_V63GatlingLaser|0072DEFD
+	Include_17=kwd_|CustomItemName_V63LaserRifle|0072DEFB
+	Include_18=kwd_|CustomItemName_WesternSpirit|0066957A
+	Include_19=kwd_|CustomItemName_WhackerSmacker|0068311E
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 1
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_commongun|002377CF
+	Include_1=kwd_|@@xKWD:INNRgrp_1|00FFFFF2
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 2
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_commongun|002377CF
+	Include_1=kwd_|@@xKWD:INNRgrp_2|00FFFFF3
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 3
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_commongun|002377CF
+	Include_1=kwd_|@@xKWD:INNRgrp_3|00FFFFF4
+	Exclude_0=kwd_|dn_HasCustomMod_Cursed|005A70B5
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 4
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=@4
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_commongun|002377CF
+	Include_1=kwd_|@@xKWD:INNRgrp_4|00FFFFF5
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_commongun|002377CF
+	Include_1=kwd_|@@xKWD:INNRgrp_4|00FFFFF5
+	Include_2=kwd_|dn_HasReceiver_TankNapalm|001C5ABA
+	Include_3=kwd_|RD01_CustomItemName_BoilingPoint|0079300F
+[EndRule]
+
+[StartRule]
+	Header=Cremator
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=4
+	regex=
+	Include_0=kwd_|dn_HasReceiver_TankNapalm_Cremator|00744979
+	Include_1=kwd_|dn_HasReciever_Slowburner|00729BDC
+[EndRule]
+
+[StartRule]
+	Header=Flamer
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=4
+	regex=
+	Include_0=kwd_|dn_HasReceiver_TankNapalm|001C5ABA
+	Exclude_0=kwd_|RD01_CustomItemName_BoilingPoint|0079300F
+[EndRule]
+
+[StartRule]
+	Header=Hunting Rifle
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=4
+	regex=
+	Include_0=kwd_|ma_HuntingRifle|00050F1E
+[EndRule]
+
+[StartRule]
+	Header=Fat Man
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=4
+	regex=
+	Include_0=kwd_|ma_Fatman|001C6BC4
+[EndRule]
+
+[StartRule]
+	Header=Harpoon Gun
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=4
+	regex=
+	Include_0=kwd_|DLC03_ma_HarpoonGun|00111066
+[EndRule]
+
+[StartRule]
+	Header=Combat Rifle
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=4
+	regex=
+	Include_0=kwd_|ma_CombatRifle|001790F7
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 5
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=@5
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_commongun|002377CF
+	Include_1=kwd_|@@xKWD:INNRgrp_5|00FFFFF6
+[EndRule]
+
+[StartRule]
+	Header=Rifle
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=5
+	regex=
+	Include_0=kwd_|dn_HasGrip_Rifle|00025019
+[EndRule]
+
+[StartRule]
+	Header=Gun
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=5
+	regex=
+	Include_0=kwd_|ma_PlasmaGun|00125CBF
+[EndRule]
+
+[StartRule]
+	Header=Pistol
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=5
+	regex=
+	Include_0=kwd_|dn_HasGrip_Pistol|00025018
+[EndRule]
+
+[StartRule]
+	Header=Shotgun
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=5
+	regex=
+	Include_0=kwd_|dn_HasBarrel_Shotgun|0003FC53
+[EndRule]
+
+[StartRule]
+	Header=>ARMOUR
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>UNIQUE
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s@4
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=SharedItemTags
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=ekwd|customitemname
+	Include_1=form|dn_CommonArmor|00184BC1
+	Include_2=kwd_|@@xKWD:INNRgrp_4|00FFFFF5
+[EndRule]
+
+[StartRule]
+	Header= - QUNQ
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=SharedItemTags
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=4
+	regex=
+	Include_0=kwd_|CustomItemName_LastBastion|00471877
+	Include_1=kwd_|CustomItemName_SilverLining|0047187A
+	Include_2=kwd_|CustomItemName_StandFast|0047187C
+	Include_3=kwd_|CustomItemName_TrailWarden|0047187D
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 1
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_CommonArmor|00184BC1
+	Include_1=kwd_|@@xKWD:INNRgrp_1|00FFFFF2
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 2
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_CommonArmor|00184BC1
+	Include_1=kwd_|@@xKWD:INNRgrp_2|00FFFFF3
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 3
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_CommonArmor|00184BC1
+	Include_1=kwd_|@@xKWD:INNRgrp_3|00FFFFF4
+	Exclude_0=ekwd|dn_hassize_
+[EndRule]
+
+[StartRule]
+	Header=>POWER ARMOUR
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 1
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 2
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form||00188160
+	Include_1=kwd_|@@xKWD:INNRgrp_2|00FFFFF3
+[EndRule]
+
+[StartRule]
+	Header=>MELEE
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>UNIQUE
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s@3
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=SharedItemTags
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=ekwd|customitemname
+	Include_1=form|dn_CommonMelee|000B9738
+	Include_2=kwd_|@@xKWD:INNRgrp_3|00FFFFF4
+[EndRule]
+
+[StartRule]
+	Header= - QUNQ
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=3
+	regex=
+	Include_0=kwd_|CustomItemName_AllRise|00471872
+	Include_1=kwd_|CustomItemName_BlackDiamond|00471873
+	Include_2=kwd_|CustomItemName_TheFarmhand|005EC268
+	Include_3=kwd_|CustomItemName_V63ShockBaton|0072DEF9
+[EndRule]
+
+[StartRule]
+	Header= - EUNQ
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=3
+	regex=
+	Include_0=kwd_|CustomItemName_BlueRidgeBrandingIron|006A0F84
+	Include_1=kwd_|CustomItemName_CryptidJawboneKnife|006A008B
+	Include_2=kwd_|CustomItemName_CultistPiercer|006A0087
+	Include_3=kwd_|CustomItemName_DoctorsOrders|0064D002
+	Include_4=kwd_|CustomItemName_LucaSwitchblade|006A0089
+	Include_5=kwd_|CustomItemName_OguaGauntlet|006B3C29
+	Include_6=kwd_|CustomItemName_RatBat|0067A474
+	Include_7=kwd_|CustomItemName_TheDebilitator|0064D003
+	Include_8=kwd_|CustomItemName_ToneDeath|0064D000
+	Include_9=kwd_|CustomItemName_WhackerSmacker|0068311E
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 1
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_CommonMelee|000B9738
+	Include_1=kwd_|@@xKWD:INNRgrp_1|00FFFFF2
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 2
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_CommonMelee|000B9738
+	Include_1=kwd_|@@xKWD:INNRgrp_2|00FFFFF3
+	Exclude_0=kwd_|dn_HasCustomMod_Cursed|005A70B5
+[EndRule]
+
+[StartRule]
+	Header=>CAMERA
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 0
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_CommonHandHeld|003F121D
+	Include_1=kwd_|@@xKWD:INNRgrp_0|00FFFFF1
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 1
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_CommonHandHeld|003F121D
+	Include_1=kwd_|@@xKWD:INNRgrp_1|00FFFFF2
+[EndRule]
+
+[StartRule]
+	Header=>PIPBOY
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_PipBoy|0050CB3E
+	Include_1=kwd_|@@xKWD:INNRgrp_0|00FFFFF1
+[EndRule]
+
+[StartRule]
+	Header=>BACKPACK
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 0
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=#BP/%s#
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_backpack|0047877F
+	Include_1=kwd_|@@xKWD:INNRgrp_0|00FFFFF1
+	Exclude_0=kwd_|dn_BackPack_Effect_None|004787A3
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 1
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_backpack|0047877F
+	Include_1=kwd_|@@xKWD:INNRgrp_1|00FFFFF2
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 2
+	rSig=INNR
+	fSig=WNAM
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_backpack|0047877F
+	Include_1=kwd_|@@xKWD:INNRgrp_2|00FFFFF3
+[EndRule]
+
+[StartRule]
+	Header=>>GROUP 3
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header= 
+	rSig=INNR
+	fSig=WNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=-1
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|dn_backpack|0047877F
+	Include_1=kwd_|@@xKWD:INNRgrp_3|00FFFFF4
+[EndRule]
+
