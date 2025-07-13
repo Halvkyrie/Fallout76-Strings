@@ -1,0 +1,54 @@
+Shared Strings Tagging Header Rules Changelog
+4.7.4
+Added subcategory a for C2. Added chems not included in subcategory b to subcategory a
+Added subcategory c for C2. Moved Formula P here, as it is more or less exclusively crafted
+
+
+4.7.3
+Fixed NWOT rule main rule missing %s and fallback having mismatching "include" rules causing it not to catch anything
+Added subcategory a for C0. Currently has Stimpak and RadAway: Diluted
+Added Addictol, Antibiotics, Disease Cure to C0 subcategory c. this way all 3 groups can be handled individually for sale, drop etc.
+
+
+4.7.2
+Fixed missing check for RadAway in C0 subcategory b
+
+
+4.7.1
+Fixed missing check for Rad-X in C0 subcategory b
+
+
+4.7
+Redid NWOT rule to use fallback for more advanced ruling, and added Molerat Jerky by Form ID
+
+Added tagging rule for regular chems. C0, C1, C2 as tiers, with optional subcategory b and c.
+C0 is for the healing/aid type chems, C1 for normal/common chems, and C2 for the rare/higher tier chems
+Subcategory b is for what's normally unwanted. Subcategory c is for what's more niche. dunno how useful c is
+
+
+4.6.1
+Changed NWOT rule to exclude Carnival Pie from its Form ID instead of keywords, as these caused some glaring issues I should have checked for.
+
+
+4.6
+Added NT rule for Gulper Smacker weapon + mod plans
+
+
+4.5
+Excluded ObjectTypeFish from RM tag, made separate fish tag instead
+Excluded MealTypeTasty + IngredientTypeFruit from NWOT tag. Means that Carnival Pies are no longer tagged, since these now benefit from herbivore properly.
+
+New Tags:
+RF: Raw Fish
+
+
+4.4
+???
+
+
+4.3
+Fixed rule for JNK to exclude legendary mod boxes (edid containing legendaryshard) since these have component data now
+
+
+4.2 and earlier
+things happened (yet again)

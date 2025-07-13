@@ -1,0 +1,112 @@
+Shared Strings SST Changelog
+5.11
+Unified naming for Axolotls to favour better sorting. Now Axolotl: Variant
+
+
+5.10.1
+TRSH: Added Inert Bomb
+Re?-Added G.A.S. Prize Certificates. Might've accidentally ctrl+z'd this change for 5.10
+
+
+5.10
+Added Rarity notes to Disease Cure and Healing Salve recipes.
+
+CCC: Added Uncommon and lower Healing Salve + Disease Cure recipes
+
+CG: Added Pioneer Scout Bowie Knife paint plan
+
+TRSH: Added Damaged Mainframe Core
+
+TRSH: Started tagging commonly looted/acquired notes and holotapes
+G.A.S. Prize Certificate (3 Versions. Note - Random Encounter Prize Bot)
+John's Last Words, Shawn's Journal, Lowell Aaronholt's Last Will and Testament (Note - Aaronholt Homestead)
+Letter of Resignation, Extortion!, Training Plan, Bill of Sale (Note - Big Bloom)
+Magellan's Log #1-3 (Holo - Big Bloom)
+Raider's Journal Entry 1-7 (Note - Moonshine Jamboree)
+Jesus Sunday's Holotape Part 1-5 (Holo - Moonshine Jamboree)
+Security Protocols (Note - Battle Bot)
+Fasnacht Residue Analysis (3 Versions. Note - Fasnacht)
+Kenneth's Journal, Crater Observations 1-2 (Note - Eviction Notice)
+Filtcher Farm Interview (Bugged. Reappears on relog. Holo - Silva Homestead)
+Fortune: Tarot (All variants but zzz. Note - NWOT)
+Wizard's Fortune #1-55 (All variants. Note - Camp Item)
+Aaronholt Farmhand Directive, Beckwith Farmhand Directive, Delano Farmhand Directive (Note - Free Range)
+
+
+5.9
+CE: Added Nuka-Cade Poster plan, S'mores Recipe, Tasty Mutton Meat Pie Recipe (formerly CCT)
+Tagged the correct Arktos Lab Coat (instead of the nonplayable version)
+
+CCT: Moved Tasty Mutton Meat Pie recipe to CE
+
+CG: Added Stings and Things daily Taxidermy (Mounted) plans
+
+
+5.8.1
+CE: Removed Ultracite Titan + Ogua Backpack Flair Plans to avoid double tagging with NT
+
+
+5.8
+TRSH: Added Spoiled foods, Moldy Food, Raw + Inert Flux
+
+
+5.7
+CE: Added Arktos Lab Coat
+
+
+5.6.2
+TRSH: Removed Glowing Mass and Ionized Meat to avoid double tagging with RM
+
+
+5.6.1
+CG: Added Fishing Rod Display plan, as this was missing tag from Big Fish in a Small Pond.
+
+
+5.6
+Undid manual NT tag for Deep-Space Alien PA skin plans, as these are handled by the Header Processor rules. oops
+
+CE: Added Encryptid Apparel drops, Beer Hat
+
+New Tag:
+TRSH: Trash. Tag name is placeholder, maybe. For mixed garbage from Workshop generators, events etc. Mainly for FOOD and AID categories.
+Added S'mores, (Spoiled) Bioluminescent Fluid, Roasted Mirelurk Meat, Cooked Softshell Meat, Mirelurk Jerky, Insect Repellent,
+Glowing Mass, High-Radiation Fluids, Ionized Meat, Glowing Blood (Pack),
+
+
+5.5
+Added Big Fish in a Small Pond plans (minus food recipes and fishing rod hook mods) to Common Generic
+
+
+5.4
+Added NT tag to some DOps Plans:
+Deep-Space Alien Power Armo(u)r skins, Intergalactic + Hot Rod Flames handmade skins, Floater Tubes
+
+Highlighted NonCraftable Bulk junk types with (NC)
+
+
+5.3
+Unified/altered naming for bait to match with the rest. Now using `Bait: ` instead of `Bait - `
+Unified naming for fish bits crafting
+Fixed Nuka-Orange renaming to Nuka-Cola: Orange. (Broken because of update i think)
+
+
+5.2
+Unified naming for goodiebags with tiers
+
+SESN: Added Big Bloom 2025 Plans, and Cosmic Capture for Invaders Summer 2025
+
+New Tags:
+CC: New baseline for cooking plans
+CCC: Common Cooking Chem. Added common basegame chems
+CCT: Common Cooking Tasty. Added all "Tasty" basegame recipes
+CCG: Common Cooking Gourmet. Added all "Gourmet" basegame recipes
+CG: Common Generic. New tag for generic plans. Added Assaultron Blade and Mr. Handy Buzz Blade plans.
+GBAG: GoodieBAG. Added Holiday Gifts, Mole Miner Pails, Cultist High Priest Pack, Spooky Bag, Mutated (Party) Package
+
+
+5.1
+Fixed extra space in Bird Bones serum
+
+
+5.0 and earlier
+things happened

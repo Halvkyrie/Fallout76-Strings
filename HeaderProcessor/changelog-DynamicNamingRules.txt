@@ -1,0 +1,24 @@
+Dynamic Naming Rules Changelog
+0.4
+Exclude Sturdy/Heavy armour variant tags from being stripped.
+
+
+0.3
+Add tag for dynamically named unique guns, melee weapons and armour
+Improvements to organizing
+
+
+0.2
+Fixes for Flamer and Boiling point naming
+Add rule for Backpacks. Misc mod names are kept and have a rule to add a prefix to them for sorting
+
+
+0.1
+Initial In-progress version
+Add rules to strip, and when necessary redo dynamic naming for:
+Guns
+Melee
+Armour
+Power Armour (Kept misc mod names)
+Camera
+Pipboy
