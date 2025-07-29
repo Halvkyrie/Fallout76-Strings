@@ -5,7 +5,7 @@
 	Template_0=defaultTemplate,*
 [EndHeader]
 [StartRule]
-	Header=%s@f
+	Header=%s@A
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -35,7 +35,7 @@
 	fullReplace=0
 	includeOR=0
 	isFallBack=-1
-	fallbackBank=0
+	fallbackBank=10
 	regex=
 	Include_0=kwd_|IngredientTypeMeat|0013486B
 	Exclude_0=kwd_|ObjectTypeFish|007ABE8A
@@ -55,7 +55,7 @@
 	fullReplace=0
 	includeOR=0
 	isFallBack=-1
-	fallbackBank=0
+	fallbackBank=10
 	regex=
 	Include_0=kwd_|ObjectTypeFish|007ABE8A
 [EndRule]
@@ -73,7 +73,7 @@
 	fullReplace=0
 	includeOR=-1
 	isFallBack=-1
-	fallbackBank=0
+	fallbackBank=10
 	regex=
 	Include_0=kwd_|IngredientTypeFruit|002944D1
 	Include_1=kwd_|IngredientTypeHerb|002944CF
