@@ -39,25 +39,6 @@
 [EndRule]
 
 [StartRule]
-	Header=%s@1
-	rSig=ALCH
-	fSig=FULL
-	enabled=-1
-	tagID=default
-	noKW=0
-	anyKW=0
-	hasCompo=0
-	preProcess=0
-	fullReplace=0
-	includeOR=-1
-	isFallBack=0
-	fallbackBank=0
-	regex=
-	Include_0=kwd_|ObjectTypeDrink|000F4AEC
-	Include_1=kwd_|ObjectTypeFood|00055ECC
-[EndRule]
-
-[StartRule]
 	Header=>>>RAW
 	rSig=ALCH
 	fSig=FULL
@@ -75,7 +56,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s@2
+	Header=Axolotl: %1@2
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -88,9 +69,9 @@
 	includeOR=0
 	isFallBack=0
 	fallbackBank=0
-	regex=
-	Include_0=kwd_|MealTypeRaw|00134858
-	Include_1=kwd_|ObjectTypeFood|00055ECC
+	regex=(.*) Axolotl
+	Include_0=kwd_|Fishing_FishType_Axolotl|00800713
+	Include_1=kwd_|ObjectTypeFish|007ABE8A
 [EndRule]
 
 [StartRule]
@@ -153,7 +134,7 @@
 [EndRule]
 
 [StartRule]
-	Header=>>>DRINKS
+	Header=%s@2
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -167,6 +148,85 @@
 	isFallBack=0
 	fallbackBank=0
 	regex=
+	Include_0=kwd_|MealTypeRaw|00134858
+	Include_1=kwd_|ObjectTypeFood|00055ECC
+[EndRule]
+
+[StartRule]
+	Header=>>>DRINKS
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Nuka-Cola: %1@1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=Nuka-((Cola .*)|(?!(Cola)).*)
+	Include_0=kwd_|DrinkTypeSoda|0013484B
+[EndRule]
+
+[StartRule]
+	Header=%s: Classic@1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|NukaCola|0004835D
+	Include_1=kwd_|DrinkTypeSoda|0013484B
+[EndRule]
+
+[StartRule]
+	Header= - SODA
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=1
+	regex=
+	Include_0=kwd_|DrinkTypeSoda|0013484B
+	Exclude_0=edid|#^brew_dlc04_nukacola_dark$
+	Exclude_1=edid|#^nukacola$
+	Exclude_2=edid|#^nukacolacranberry$
+	Exclude_3=edid|#^nukacolaquantum$
+	Exclude_4=edid|#nukacola_vaccine_.*
 [EndRule]
 
 [StartRule]
@@ -225,6 +285,24 @@
 [EndRule]
 
 [StartRule]
+	Header=Bubblegum: %1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=(.*) Bubblegum
+	Include_0=kwd_|ObjectTypeBubblegum|0044D49D
+[EndRule]
+
+[StartRule]
 	Header= - PKG
 	rSig=ALCH
 	fSig=FULL
@@ -262,6 +340,25 @@
 	Include_0=edid|moleratjerky
 	Include_1=edid|nwot_
 	Exclude_0=form|NWOT_CarnivalPie|0066D3F2
+[EndRule]
+
+[StartRule]
+	Header=%s@1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|ObjectTypeDrink|000F4AEC
+	Include_1=kwd_|ObjectTypeFood|00055ECC
 [EndRule]
 
 [StartRule]
