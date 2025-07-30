@@ -362,7 +362,24 @@
 [EndRule]
 
 [StartRule]
-	Header=>>CHEMS
+	Header=>>AID
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>>CHEMS
 	rSig=ALCH
 	fSig=FULL
 	enabled=0
@@ -607,6 +624,163 @@
 	fallbackBank=0
 	regex=
 	Include_0=form|SFS09_FormulaP|00417A42
+[EndRule]
+
+[StartRule]
+	Header=>>>ETC
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Serum: %1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=(.*) Serum
+	Include_0=kwd_|ObjectTypeSerum|00393F7F
+[EndRule]
+
+[StartRule]
+	Header=%6: %3%4 %2%5@1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=((.+) (Handmade) +|(Crafted) (.+) )(Mole Miner Pail|Holiday Gift)
+	Include_0=edid|#^festive_holidaygift_craftable_tier_0
+	Include_1=edid|#^treasurehunt_chest_craftable_tier_0
+	Exclude_0=edid|#_(.*)_tier_02
+[EndRule]
+
+[StartRule]
+	Header=%2: %1 Standard@1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=^(Handmade|Crafted) (Mole Miner Pail|Holiday Gift)
+	Include_0=edid|#^festive_holidaygift_craftable_tier_02
+	Include_1=edid|#^treasurehunt_chest_craftable_tier_02
+[EndRule]
+
+[StartRule]
+	Header=%3: %2@1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=((.+) )(Mole Miner Pail|Holiday Gift)
+	Include_0=edid|#^festive_holidaygift_loot_tier_0
+	Include_1=edid|#^treasurehunt_chest_loot_tier_0
+	Exclude_0=edid|#_(.*)_tier_02
+[EndRule]
+
+[StartRule]
+	Header=%s: Standard@1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=(Mole Miner Pail|Holiday Gift)
+	Include_0=edid|#^festive_holidaygift_loot_tier_02
+	Include_1=edid|#^treasurehunt_chest_loot_tier_02
+[EndRule]
+
+[StartRule]
+	Header= - GBAG
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=1
+	regex=
+	Include_0=edid|#^e07a_mothman_cultisthighpriestreward
+	Include_1=edid|#^festive_holidaygift_(.*)_tier_0[1-3]
+	Include_2=edid|#^mutatedevents_package_singlemutatedevent(.*)
+	Include_3=edid|#^spooky_treatbag_loot
+	Include_4=edid|#^treasurehunt_chest_(.*)_tier_0[1-3]
+[EndRule]
+
+[StartRule]
+	Header=%s@1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^e07a_mothman_cultisthighpriestreward
+	Include_1=edid|#^festive_holidaygift_(.*)_tier_0[1-3]
+	Include_2=edid|#^mutatedevents_package_singlemutatedevent(.*)
+	Include_3=edid|#^spooky_treatbag_loot
+	Include_4=edid|#^treasurehunt_chest_(.*)_tier_0[1-3]
 [EndRule]
 
 [StartRule]
