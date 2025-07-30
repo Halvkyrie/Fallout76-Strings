@@ -39,7 +39,43 @@
 [EndRule]
 
 [StartRule]
-	Header=%s@f
+	Header=%s@1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|ObjectTypeDrink|000F4AEC
+	Include_1=kwd_|ObjectTypeFood|00055ECC
+[EndRule]
+
+[StartRule]
+	Header=>>>RAW
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s@2
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -54,6 +90,7 @@
 	fallbackBank=0
 	regex=
 	Include_0=kwd_|MealTypeRaw|00134858
+	Include_1=kwd_|ObjectTypeFood|00055ECC
 [EndRule]
 
 [StartRule]
@@ -69,7 +106,7 @@
 	fullReplace=0
 	includeOR=0
 	isFallBack=-1
-	fallbackBank=0
+	fallbackBank=2
 	regex=
 	Include_0=kwd_|IngredientTypeMeat|0013486B
 	Exclude_0=kwd_|ObjectTypeFish|007ABE8A
@@ -89,7 +126,7 @@
 	fullReplace=0
 	includeOR=0
 	isFallBack=-1
-	fallbackBank=0
+	fallbackBank=2
 	regex=
 	Include_0=kwd_|ObjectTypeFish|007ABE8A
 [EndRule]
@@ -107,7 +144,7 @@
 	fullReplace=0
 	includeOR=-1
 	isFallBack=-1
-	fallbackBank=0
+	fallbackBank=2
 	regex=
 	Include_0=kwd_|IngredientTypeFruit|002944D1
 	Include_1=kwd_|IngredientTypeHerb|002944CF
@@ -116,7 +153,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s - PKG
+	Header=>>>DRINKS
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -130,35 +167,10 @@
 	isFallBack=0
 	fallbackBank=0
 	regex=
-	Include_0=kwd_|MealTypePackaged|0013485D
-	Exclude_0=kwd_|IngredientTypePastry|00134837
-	Exclude_1=kwd_|ObjectTypeCandy|0044D49C
 [EndRule]
 
 [StartRule]
-	Header=%s - ALC
-	rSig=ALCH
-	fSig=FULL
-	enabled=-1
-	tagID=default
-	noKW=0
-	anyKW=0
-	hasCompo=0
-	preProcess=0
-	fullReplace=0
-	includeOR=0
-	isFallBack=0
-	fallbackBank=0
-	regex=
-	Include_0=kwd_|DrinkTypeAlcohol|0010C416
-	Exclude_0=kwd_|DrinkTypeLiquor|004878E3
-	Exclude_1=kwd_|DrinkTypeSoda|0013484B
-	Exclude_2=kwd_|SpiritAlcoholType|003FBC4A
-	Exclude_3=kwd_|WineAlcoholType|003FBC49
-[EndRule]
-
-[StartRule]
-	Header=%s - LQR
+	Header= - LQR
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -169,15 +181,15 @@
 	preProcess=0
 	fullReplace=0
 	includeOR=-1
-	isFallBack=0
-	fallbackBank=0
+	isFallBack=-1
+	fallbackBank=1
 	regex=
 	Include_0=kwd_|DrinkTypeLiquor|004878E3
 	Include_1=kwd_|WineAlcoholType|003FBC49
 [EndRule]
 
 [StartRule]
-	Header=%s@f
+	Header= - ALC
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -188,11 +200,48 @@
 	preProcess=0
 	fullReplace=0
 	includeOR=0
+	isFallBack=-1
+	fallbackBank=1
+	regex=
+	Include_0=kwd_|DrinkTypeAlcohol|0010C416
+	Exclude_0=kwd_|DrinkTypeSoda|0013484B
+[EndRule]
+
+[StartRule]
+	Header=>>>ETC
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
 	isFallBack=0
 	fallbackBank=0
 	regex=
-	Include_0=kwd_|ObjectTypeFood|00055ECC
-	Exclude_0=form|NWOT_CarnivalPie|0066D3F2
+[EndRule]
+
+[StartRule]
+	Header= - PKG
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=1
+	regex=
+	Include_0=kwd_|MealTypePackaged|0013485D
+	Exclude_0=kwd_|IngredientTypePastry|00134837
+	Exclude_1=kwd_|ObjectTypeCandy|0044D49C
 [EndRule]
 
 [StartRule]
@@ -208,10 +257,11 @@
 	fullReplace=0
 	includeOR=-1
 	isFallBack=-1
-	fallbackBank=0
+	fallbackBank=1
 	regex=
 	Include_0=edid|moleratjerky
 	Include_1=edid|nwot_
+	Exclude_0=form|NWOT_CarnivalPie|0066D3F2
 [EndRule]
 
 [StartRule]
