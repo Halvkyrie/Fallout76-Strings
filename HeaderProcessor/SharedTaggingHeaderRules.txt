@@ -1215,9 +1215,37 @@
 	isFallBack=0
 	fallbackBank=0
 	regex=
-	Include_0=edid|honeycomb_paper
-	Include_1=edid|plastiform
-	Include_2=kwd_|ObjectTypeRecipe|003E1567
+	Include_0=edid|#^recipe_armor_vaultsuit51_underarmor$
+	Include_1=edid|#^recipe_backpack_standard_material_atomicsetltdhandbag$
+	Include_2=edid|#^recipe_mod_powerarmor_material_paint_camoblue$
+	Include_3=edid|#^recipe_mod_weapon_44_material_camoblue$
+	Include_4=edid|#^recipe_outfit_jitterbugjudy$
+	Include_5=edid|#^recipe_peppermintflair$
+	Include_6=edid|#^recipe_snowmanheadflair$
+	Include_7=edid|#^recipe_workshop_bed_princesscastlepink_sleepingbag$
+	Include_8=edid|#^recipe_workshop_ceiling_light_truck$
+	Include_9=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_holidaytree_(.*)
+	Include_10=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_ribbonbell$
+	Include_11=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_santa_01$
+	Include_12=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_snowflake_01$
+	Include_13=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_snowman$
+	Include_14=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_target$
+	Include_15=edid|#^recipe_workshop_defensivestructures_barbedwirefence$
+	Include_16=edid|#^recipe_workshop_floordecor_arearug_nukagirl$
+	Include_17=edid|#^recipe_workshop_floordecor_giantbrontosaurus_red
+	Include_18=edid|#^recipe_workshop_floordecor_musket_stack_monument$
+	Include_19=edid|#^recipe_workshop_floordecor_plushie_behemothboss$
+	Include_20=edid|#^recipe_workshop_floordecor_plushie_brahmin$
+	Include_21=edid|#^recipe_workshop_floordecor_strawgoat$
+	Include_22=edid|#^recipe_workshop_floordecor_taxidermy_gorilla_(.*)
+	Include_23=edid|#^recipe_workshop_floordecor_vintagewatercooler$
+	Include_24=edid|#^recipe_workshop_lights_plastiform(.*)
+	Include_25=edid|#^recipe_workshop_walldecor_condemnednotificationsigns$
+	Include_26=edid|#^recipe_workshop_walldecor_santacrash$
+	Include_27=edid|#^recipe_workshop_walldecor_tatteredcurtains$
+	Include_28=edid|#^recipe_workshop_walldecor_wallmountedfan$
+	Include_29=edid|#^recipe_workshop_walldecor_windchime_molerat$
+	Include_30=kwd_|ObjectTypeRecipe|003E1567
 [EndRule]
 
 [StartRule]
