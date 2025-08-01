@@ -1471,6 +1471,23 @@
 [EndRule]
 
 [StartRule]
+	Header=>>>SPOOKY BAGS
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
 	Header=%s - SESN
 	rSig=BOOK
 	fSig=FULL
@@ -1485,9 +1502,22 @@
 	isFallBack=0
 	fallbackBank=0
 	regex=
-	Include_0=edid|floordecor_pumpkin
-	Include_1=edid|hellfire_variant
-	Include_2=edid|jackolite
-	Include_3=kwd_|ObjectTypeRecipe|003E1567
+	Include_0=edid|#^recipe_backpack_standard_material_princess$
+	Include_1=edid|#^recipe_headwear_executioner2$
+	Include_2=edid|#^recipe_headwear_skullrider_rad$
+	Include_3=edid|#^recipe_mod_assaultrifle_paint_wraithswrath$
+	Include_4=edid|#^recipe_mod_chainsaw_paint_ghostlygrinder$
+	Include_5=edid|#^recipe_mod_powerarmor_material_paint_hellfire_variant_(.*)
+	Include_6=edid|#^recipe_workshop_(.*)jackolite
+	Include_7=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_ghost(.*)
+	Include_8=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_jackolantern(.*)
+	Include_9=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_spider$
+	Include_10=edid|#^recipe_workshop_floordecor_giantdinosaur_red$
+	Include_11=edid|#^recipe_workshop_floordecor_pumpkincarved(.*)
+	Include_12=edid|#^recipe_workshop_floordecor_pumpkinrack(.*)
+	Include_13=edid|#^recipe_workshop_floordecor_skeleton_drbones$
+	Include_14=edid|#^recipe_workshop_floordecor_statues_grimreapercardboardcutouts$
+	Include_15=edid|#^recipe_workshop_floordecor_statues_scarecrows$
+	Include_16=kwd_|ObjectTypeRecipe|003E1567
 [EndRule]
 
