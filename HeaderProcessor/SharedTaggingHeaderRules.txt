@@ -1138,7 +1138,17 @@
 	Include_5=edid|#^recipe_(.*)_powerarmor_alieninvaderv2_(.*)
 	Include_6=edid|#^recipe_armor_bosinfantry_(.*)
 	Include_7=edid|#^recipe_armor_botsmith(.*)
-	Include_8=kwd_|NonPlayerTradable|00499F7A
+	Include_8=edid|#^recipe_backpack_standard_material_alien$
+	Include_9=edid|#^recipe_mod_handmade_material_paint_hotrod$
+	Include_10=edid|#^recipe_mod_handmade_material_paint_intergalactic$
+	Include_11=edid|#^recipe_weapon_melee_facebreaker$
+	Include_12=edid|#^recipe_weapon_melee_plasmasword$
+	Include_13=edid|#^recipe_weapon_melee_warglaive$
+	Include_14=edid|#^recipe_weapon_ranged_bosrocketlauncher$
+	Include_15=edid|#^recipe_weapon_rangedbospistol_29$
+	Include_16=edid|#^recipe_workshop_flatwoodsmonstertube$
+	Include_17=edid|#^recipe_workshop_floatertubes$
+	Include_18=kwd_|NonPlayerTradable|00499F7A
 [EndRule]
 
 [StartRule]
