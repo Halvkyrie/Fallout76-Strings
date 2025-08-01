@@ -1433,12 +1433,15 @@
 	Include_22=edid|#^recipe_workshop_floordecor_taxidermy_gorilla_(.*)
 	Include_23=edid|#^recipe_workshop_floordecor_vintagewatercooler$
 	Include_24=edid|#^recipe_workshop_lights_plastiform(.*)
-	Include_25=edid|#^recipe_workshop_walldecor_condemnednotificationsigns$
-	Include_26=edid|#^recipe_workshop_walldecor_santacrash$
-	Include_27=edid|#^recipe_workshop_walldecor_tatteredcurtains$
-	Include_28=edid|#^recipe_workshop_walldecor_wallmountedfan$
-	Include_29=edid|#^recipe_workshop_walldecor_windchime_molerat$
-	Include_30=kwd_|ObjectTypeRecipe|003E1567
+	Include_25=edid|#^recipe_workshop_lights_redrocketgas(.*)
+	Include_26=edid|#^recipe_workshop_lights_starlight$
+	Include_27=edid|#^recipe_workshop_lights_wintericicle$
+	Include_28=edid|#^recipe_workshop_walldecor_condemnednotificationsigns$
+	Include_29=edid|#^recipe_workshop_walldecor_santacrash$
+	Include_30=edid|#^recipe_workshop_walldecor_tatteredcurtains$
+	Include_31=edid|#^recipe_workshop_walldecor_wallmountedfan$
+	Include_32=edid|#^recipe_workshop_walldecor_windchime_molerat$
+	Include_33=kwd_|ObjectTypeRecipe|003E1567
 [EndRule]
 
 [StartRule]
