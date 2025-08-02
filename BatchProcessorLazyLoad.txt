@@ -1,0 +1,8 @@
+StartRule
+LangSource=english
+LangDest=english
+UseDataDir=1
+Command=LoadFile:SeventySix.esm
+Command=ImportSst:0:1:D:\Git\Fallout76-Strings\Dictionary\SharedStrings_en_en.sst
+Command=ImportSst:0:1:D:\Modding\Fallout76\Strings\PersonalStringsMod\PersonalDictionary_en_en.sst
+EndRule
