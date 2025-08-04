@@ -1,0 +1,401 @@
+﻿#Do Not Edit
+[version=3]
+[StartHeader]
+	Tag_0=default
+	Template_0=defaultTemplate,*
+[EndHeader]
+[StartRule]
+	Header=>AXOLOTLS
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Axolotl: %1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=(.*) Axolotl
+	Include_0=kwd_|Fishing_FishType_Axolotl|00800713
+	Include_1=kwd_|ObjectTypeFish|007ABE8A
+[EndRule]
+
+[StartRule]
+	Header=>NUKA-COLA
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Nuka-Cola: %1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=Nuka-((Cola .*)|(?!(Cola)).*)
+	Include_0=kwd_|DrinkTypeSoda|0013484B
+[EndRule]
+
+[StartRule]
+	Header=%s: Classic
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|NukaCola|0004835D
+	Include_1=kwd_|DrinkTypeSoda|0013484B
+[EndRule]
+
+[StartRule]
+	Header=>BUBBLEGUM
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Bubblegum: %1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=(.*) Bubblegum
+	Include_0=kwd_|ObjectTypeBubblegum|0044D49D
+[EndRule]
+
+[StartRule]
+	Header=>SERUMS
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Serum: %1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=(.*) Serum
+	Include_0=kwd_|ObjectTypeSerum|00393F7F
+[EndRule]
+
+[StartRule]
+	Header=>GIFTS/PAILS
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%6: %3%4 %2%5
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=((.+) (Handmade) +|(Crafted) (.+) )(Mole Miner Pail|Holiday Gift)
+	Include_0=edid|#^festive_holidaygift_craftable_tier_0
+	Include_1=edid|#^treasurehunt_chest_craftable_tier_0
+	Exclude_0=edid|#_(.*)_tier_02
+[EndRule]
+
+[StartRule]
+	Header=%2: %1 Standard
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=^(Handmade|Crafted) (Mole Miner Pail|Holiday Gift)
+	Include_0=edid|#^festive_holidaygift_craftable_tier_02
+	Include_1=edid|#^treasurehunt_chest_craftable_tier_02
+[EndRule]
+
+[StartRule]
+	Header=%3: %2
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=((.+) )(Mole Miner Pail|Holiday Gift)
+	Include_0=edid|#^festive_holidaygift_loot_tier_0
+	Include_1=edid|#^treasurehunt_chest_loot_tier_0
+	Exclude_0=edid|#_(.*)_tier_02
+[EndRule]
+
+[StartRule]
+	Header=%s: Standard
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=(Mole Miner Pail|Holiday Gift)
+	Include_0=edid|#^festive_holidaygift_loot_tier_02
+	Include_1=edid|#^treasurehunt_chest_loot_tier_02
+[EndRule]
+
+[StartRule]
+	Header=>FISH BITS
+	rSig=COBJ
+	fSig=HNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Fish Bits: %1
+	rSig=COBJ
+	fSig=HNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=(.*) - Fish Bits
+	Include_0=edid|#^fishing_fish_co_meal_fishbitsfrom(.*)
+[EndRule]
+
+[StartRule]
+	Header=>BAIT
+	rSig=COBJ
+	fSig=HNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Bait: %1
+	rSig=COBJ
+	fSig=HNAM
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=Bait - (.*)
+	Include_0=edid|#^fishing_bait_(.*)$
+[EndRule]
+
+[StartRule]
+	Header=>TREASURE MAPS
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Treasure Map: %1 #%2
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=(.*) Treasure Map #([0-9]{2})
+	Include_0=edid|#^treasuremap[0-9]{2}$
+[EndRule]
+
+[StartRule]
+	Header=>FLOWER CROWNS
+	rSig=ARMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Flower Crown: %1
+	rSig=ARMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=Flower Crown - (.*)
+	Include_0=edid|#^sse_armo_headwear_flowercrown_(.*)$
+[EndRule]
+
