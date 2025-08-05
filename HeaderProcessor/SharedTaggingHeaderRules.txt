@@ -1201,25 +1201,27 @@
 	fallbackBank=0
 	regex=
 	Include_0=edid|#^meat_recipe_(.*)
-	Include_1=edid|#^recipe_backpack_standard_material_chally$
-	Include_2=edid|#^recipe_cooking_meatweek_tatosalad$
-	Include_3=edid|#^recipe_meat_(.*)
-	Include_4=edid|#^recipe_weapon_ranged_peppershaker$
-	Include_5=edid|#^recipe_weapon_thrown_meatcleaver$
-	Include_6=edid|#^recipe_workshop_crafting_craftingcooking_animalistic_grill$
-	Include_7=edid|#^recipe_workshop_crafting_craftingcooking_grocerycartgrill$
-	Include_8=edid|#^recipe_workshop_curtaindoor_bloody$
-	Include_9=edid|#^recipe_workshop_floordecor_decoyduckset$
-	Include_10=edid|#^recipe_workshop_floordecor_plasticfruitbowl$
-	Include_11=edid|#^recipe_workshop_floordecor_plushie_peppino$
-	Include_12=edid|#^recipe_workshop_floordecor_plushie_punty$
-	Include_13=edid|#^recipe_workshop_floordecor_plushie_wilbermcpigg$
-	Include_14=edid|#^recipe_workshop_floordecor_rugs_bloody$
-	Include_15=edid|#^recipe_workshop_floordecor_stuffedmutanthound$
-	Include_16=edid|#^recipe_workshop_lights_wall_mutanthounddiagram$
-	Include_17=edid|#^recipe_workshop_lights_wall_supermutantdiagram$
-	Include_18=edid|#^recipe_workshop_walldecor_plasticfruitwreath$
-	Include_19=kwd_|ObjectTypeRecipe|003E1567
+	Include_1=edid|#^recipe_(.*)_meattenderizer(.*)
+	Include_2=edid|#^recipe_backpack_standard_material_chally$
+	Include_3=edid|#^recipe_cooking_meatweek_tatosalad$
+	Include_4=edid|#^recipe_meat_(.*)
+	Include_5=edid|#^recipe_weapon_ranged_peppershaker$
+	Include_6=edid|#^recipe_weapon_thrown_meatcleaver$
+	Include_7=edid|#^recipe_workshop_crafting_craftingcooking_animalistic_grill$
+	Include_8=edid|#^recipe_workshop_crafting_craftingcooking_grocerycartgrill$
+	Include_9=edid|#^recipe_workshop_curtaindoor_bloody$
+	Include_10=edid|#^recipe_workshop_floordecor_decoyduckset$
+	Include_11=edid|#^recipe_workshop_floordecor_misc_meatweek_poleflag$
+	Include_12=edid|#^recipe_workshop_floordecor_plasticfruitbowl$
+	Include_13=edid|#^recipe_workshop_floordecor_plushie_peppino$
+	Include_14=edid|#^recipe_workshop_floordecor_plushie_punty$
+	Include_15=edid|#^recipe_workshop_floordecor_plushie_wilbermcpigg$
+	Include_16=edid|#^recipe_workshop_floordecor_rugs_bloody$
+	Include_17=edid|#^recipe_workshop_floordecor_stuffedmutanthound$
+	Include_18=edid|#^recipe_workshop_lights_wall_mutanthounddiagram$
+	Include_19=edid|#^recipe_workshop_lights_wall_supermutantdiagram$
+	Include_20=edid|#^recipe_workshop_walldecor_plasticfruitwreath$
+	Include_21=kwd_|ObjectTypeRecipe|003E1567
 [EndRule]
 
 [StartRule]
