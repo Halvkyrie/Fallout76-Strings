@@ -1,0 +1,1572 @@
+﻿#Do Not Edit
+[version=3]
+[StartHeader]
+	Tag_0=default
+	Template_0=defaultTemplate,*
+[EndHeader]
+[StartRule]
+	Header=>CONSUMABLES
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>FOOD/DRINK
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>>RAW
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Axolotl: %1 @2
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=(.*) Axolotl
+	Include_0=kwd_|Fishing_FishType_Axolotl|00800713
+	Include_1=kwd_|ObjectTypeFish|007ABE8A
+[EndRule]
+
+[StartRule]
+	Header=
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=2
+	regex=
+	Include_0=kwd_|IngredientTypeMeat|0013486B
+	Exclude_0=kwd_|ObjectTypeFish|007ABE8A
+	Exclude_1=kwd_|PlantTypeMothmanEggs|00496167
+[EndRule]
+
+[StartRule]
+	Header=
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=2
+	regex=
+	Include_0=kwd_|ObjectTypeFish|007ABE8A
+[EndRule]
+
+[StartRule]
+	Header=
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=2
+	regex=
+	Include_0=kwd_|IngredientTypeFruit|002944D1
+	Include_1=kwd_|IngredientTypeHerb|002944CF
+	Include_2=kwd_|IngredientTypeVegetable|002944CE
+	Include_3=kwd_|PlantTypeMothmanEggs|00496167
+[EndRule]
+
+[StartRule]
+	Header=%s @2
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|MealTypeRaw|00134858
+	Include_1=kwd_|ObjectTypeFood|00055ECC
+[EndRule]
+
+[StartRule]
+	Header=>>>DRINKS
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Nuka-Cola: %1 @1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=Nuka-((Cola .*)|(?!(Cola)).*)
+	Include_0=kwd_|DrinkTypeSoda|0013484B
+[EndRule]
+
+[StartRule]
+	Header=%s: Classic @1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|NukaCola|0004835D
+	Include_1=kwd_|DrinkTypeSoda|0013484B
+[EndRule]
+
+[StartRule]
+	Header=
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=1
+	regex=
+	Include_0=kwd_|DrinkTypeSoda|0013484B
+	Exclude_0=edid|#^brew_dlc04_nukacola_dark$
+	Exclude_1=edid|#^nukacola$
+	Exclude_2=edid|#^nukacolacranberry$
+	Exclude_3=edid|#^nukacolaquantum$
+	Exclude_4=edid|#nukacola_vaccine_.*
+[EndRule]
+
+[StartRule]
+	Header=
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=1
+	regex=
+	Include_0=kwd_|DrinkTypeLiquor|004878E3
+	Include_1=kwd_|WineAlcoholType|003FBC49
+[EndRule]
+
+[StartRule]
+	Header=
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=1
+	regex=
+	Include_0=kwd_|DrinkTypeAlcohol|0010C416
+	Exclude_0=kwd_|DrinkTypeSoda|0013484B
+[EndRule]
+
+[StartRule]
+	Header=>>>ETC
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Bubblegum: %1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=(.*) Bubblegum
+	Include_0=kwd_|ObjectTypeBubblegum|0044D49D
+[EndRule]
+
+[StartRule]
+	Header= - PKG
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=1
+	regex=
+	Include_0=kwd_|MealTypePackaged|0013485D
+	Exclude_0=kwd_|IngredientTypePastry|00134837
+	Exclude_1=kwd_|ObjectTypeCandy|0044D49C
+[EndRule]
+
+[StartRule]
+	Header= - NWOT
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=1
+	regex=
+	Include_0=edid|moleratjerky
+	Include_1=edid|nwot_
+	Exclude_0=form|NWOT_CarnivalPie|0066D3F2
+[EndRule]
+
+[StartRule]
+	Header=%s @1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|ObjectTypeDrink|000F4AEC
+	Include_1=kwd_|ObjectTypeFood|00055ECC
+[EndRule]
+
+[StartRule]
+	Header=>>AID
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>>CHEMS
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s@f@f
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|ObjectTypeChem|000F4AE7
+	Exclude_0=edid|babylon
+	Exclude_1=edid|cut
+	Exclude_2=edid|post
+	Exclude_3=edid|zzz
+[EndRule]
+
+[StartRule]
+	Header= - C0
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=form|Addictol|000459C5
+	Include_1=form|Bloodpack|00052409
+	Include_2=form|HealingSalve|000522F7
+	Include_3=form|RadAway|00023742
+	Include_4=form|RadAwayDiluted|0012D3EF
+	Include_5=form|RadX|00024057
+	Include_6=form|RadXDiluted|0012D3F1
+	Include_7=form|SFM04_Organic_RadShield|00081FDE
+	Include_8=form|Stimpak|00023736
+	Include_9=form|StimpakDiluted|003078C2
+	Include_10=form|SuperStimpak|00117DF9
+	Include_11=form|SURV_DiseaseCure_Antibiotics|003E08A9
+	Include_12=form|SURV_DiseaseCure_HerbalMedicine|003E08A8
+[EndRule]
+
+[StartRule]
+	Header=a
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=form|RadAwayDiluted|0012D3EF
+	Include_1=form|Stimpak|00023736
+[EndRule]
+
+[StartRule]
+	Header=b
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=edid|diluted
+	Include_1=edid|radaway
+	Include_2=edid|radx
+	Include_3=edid|salve
+	Include_4=edid|super
+	Exclude_0=form|RadAwayDiluted|0012D3EF
+[EndRule]
+
+[StartRule]
+	Header=c
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=form|Addictol|000459C5
+	Include_1=form|Bloodpack|00052409
+	Include_2=form|SFM04_Organic_RadShield|00081FDE
+	Include_3=form|SURV_DiseaseCure_Antibiotics|003E08A9
+	Include_4=form|SURV_DiseaseCure_HerbalMedicine|003E08A8
+[EndRule]
+
+[StartRule]
+	Header= - C1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=form|Buffout|00033778
+	Include_1=form|MedX|00033779
+	Include_2=form|Mentats|0003377B
+	Include_3=form|Psycho|0003377D
+[EndRule]
+
+[StartRule]
+	Header= - C2
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=form|BerryMentats|000518BB
+	Include_1=form|Bufftats|00058AA5
+	Include_2=form|Calmex|00058AA7
+	Include_3=form|DaddyO|00156D0B
+	Include_4=form|DayTripper|00150729
+	Include_5=form|Fury|000628CA
+	Include_6=form|GrapeMentats|0010129A
+	Include_7=form|OrangeMentats|000518C5
+	Include_8=form|Overdrive|00058AAD
+	Include_9=form|Psychobuff|00058AAC
+	Include_10=form|Psychotats|00058AAA
+	Include_11=form|SFS09_FormulaP|00417A42
+	Include_12=form|XCell|001506F4
+[EndRule]
+
+[StartRule]
+	Header=a
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=form|BerryMentats|000518BB
+	Include_1=form|GrapeMentats|0010129A
+	Include_2=form|Overdrive|00058AAD
+	Include_3=form|Psychobuff|00058AAC
+	Include_4=form|Psychotats|00058AAA
+	Include_5=form|XCell|001506F4
+[EndRule]
+
+[StartRule]
+	Header=b
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=form|Bufftats|00058AA5
+	Include_1=form|Calmex|00058AA7
+	Include_2=form|DaddyO|00156D0B
+	Include_3=form|DayTripper|00150729
+	Include_4=form|Fury|000628CA
+	Include_5=form|OrangeMentats|000518C5
+[EndRule]
+
+[StartRule]
+	Header=c
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=form|SFS09_FormulaP|00417A42
+[EndRule]
+
+[StartRule]
+	Header=>>>ETC
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=Serum: %1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=(.*) Serum
+	Include_0=kwd_|ObjectTypeSerum|00393F7F
+[EndRule]
+
+[StartRule]
+	Header=%6: %3%4 %2%5 @1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=((.+) (Handmade) +|(Crafted) (.+) )(Mole Miner Pail|Holiday Gift)
+	Include_0=edid|#^festive_holidaygift_craftable_tier_0
+	Include_1=edid|#^treasurehunt_chest_craftable_tier_0
+	Exclude_0=edid|#_(.*)_tier_02
+[EndRule]
+
+[StartRule]
+	Header=%2: %1 Standard @1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=^(Handmade|Crafted) (Mole Miner Pail|Holiday Gift)
+	Include_0=edid|#^festive_holidaygift_craftable_tier_02
+	Include_1=edid|#^treasurehunt_chest_craftable_tier_02
+[EndRule]
+
+[StartRule]
+	Header=%3: %2 @1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=((.+) )(Mole Miner Pail|Holiday Gift)
+	Include_0=edid|#^festive_holidaygift_loot_tier_0
+	Include_1=edid|#^treasurehunt_chest_loot_tier_0
+	Exclude_0=edid|#_(.*)_tier_02
+[EndRule]
+
+[StartRule]
+	Header=%s: Standard @1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=(Mole Miner Pail|Holiday Gift)
+	Include_0=edid|#^festive_holidaygift_loot_tier_02
+	Include_1=edid|#^treasurehunt_chest_loot_tier_02
+[EndRule]
+
+[StartRule]
+	Header=
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=1
+	regex=
+	Include_0=edid|#^e07a_mothman_cultisthighpriestreward
+	Include_1=edid|#^festive_holidaygift_(.*)_tier_0[1-3]
+	Include_2=edid|#^mutatedevents_package_singlemutatedevent(.*)
+	Include_3=edid|#^spooky_treatbag_loot
+	Include_4=edid|#^treasurehunt_chest_(.*)_tier_0[1-3]
+[EndRule]
+
+[StartRule]
+	Header=%s @1
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^e07a_mothman_cultisthighpriestreward
+	Include_1=edid|#^festive_holidaygift_(.*)_tier_0[1-3]
+	Include_2=edid|#^mutatedevents_package_singlemutatedevent(.*)
+	Include_3=edid|#^spooky_treatbag_loot
+	Include_4=edid|#^treasurehunt_chest_(.*)_tier_0[1-3]
+[EndRule]
+
+[StartRule]
+	Header=>AMMO
+	rSig=AMMO
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=AMMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|AmmoTypeEnergy|003896DD
+	Include_1=kwd_|ObjectTypeAmmo|000F4AE8
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=AMMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|AmmoTypeBallistic|003896DE
+	Include_1=kwd_|ObjectTypeAmmo|000F4AE8
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=AMMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|AmmoTypeExplosive|003896DF
+	Include_1=kwd_|ObjectTypeAmmo|000F4AE8
+[EndRule]
+
+[StartRule]
+	Header=>MISC/JUNK
+	rSig=MISC
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s - JNK
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=-1
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Exclude_0=edid|legendaryshard
+	Exclude_1=kwd_|ObjectTypeLooseMod|00135C17
+[EndRule]
+
+[StartRule]
+	Header=%s - CC
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|Moon_CryptidCardKeyword|006975A1
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|MTR05_Breach_RewardKeyword|00309349
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|ObjectTypeLooseMod|00135C17
+	Exclude_0=edid|atx
+	Exclude_1=edid|cut
+	Exclude_2=edid|debug
+	Exclude_3=edid|del_
+	Exclude_4=edid|post-
+	Exclude_5=edid|post_
+	Exclude_6=edid|test_
+	Exclude_7=edid|zzz
+[EndRule]
+
+[StartRule]
+	Header=%s - LBX1
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|legendaryshard_armor1_
+	Include_1=edid|legendaryshard_shared1_
+	Include_2=edid|legendaryshard_weapon1_
+	Exclude_0=edid|del_
+	Exclude_1=edid|zzz_
+[EndRule]
+
+[StartRule]
+	Header=%s - LBX2
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|legendaryshard_armor2_
+	Include_1=edid|legendaryshard_shared2_
+	Include_2=edid|legendaryshard_weapon2_
+	Exclude_0=edid|del_
+	Exclude_1=edid|zzz_
+[EndRule]
+
+[StartRule]
+	Header=%s - LBX3
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|legendaryshard_armor3_
+	Include_1=edid|legendaryshard_shared3_
+	Include_2=edid|legendaryshard_weapon3_
+	Exclude_0=edid|del_
+	Exclude_1=edid|zzz_
+[EndRule]
+
+[StartRule]
+	Header=%s - LBX4
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|legendaryshard_armor4_
+	Include_1=edid|legendaryshard_shared4_
+	Include_2=edid|legendaryshard_weapon4_
+	Exclude_0=edid|del_
+	Exclude_1=edid|zzz_
+[EndRule]
+
+[StartRule]
+	Header=>WEAPONS
+	rSig=WEAP
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=WEAP
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|WeaponTypeGrenade|0010C415
+	Include_1=kwd_|WeaponTypeMine|0010C414
+	Exclude_0=kwd_|WeaponTypeThrowingKnife|003879A4
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=WEAP
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|WeaponTypeThrowingKnife|003879A4
+[EndRule]
+
+[StartRule]
+	Header=>PLANS
+	rSig=BOOK
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#(.*)recipe_(.*)flair
+	Include_1=edid|#^e08a_recipe_(.*)gulpersmacker(.*)
+	Include_2=edid|#^rd01_(.*)
+	Include_3=edid|#^recipe_(.*)_enclavescoutuniform_(.*)_covert
+	Include_4=edid|#^recipe_(.*)_marine_arctic_(.*)
+	Include_5=edid|#^recipe_(.*)_powerarmor_alieninvaderv2_(.*)
+	Include_6=edid|#^recipe_armor_bosinfantry_(.*)
+	Include_7=edid|#^recipe_armor_botsmith(.*)
+	Include_8=edid|#^recipe_backpack_standard_material_alien$
+	Include_9=edid|#^recipe_mod_handmade_material_paint_hotrod$
+	Include_10=edid|#^recipe_mod_handmade_material_paint_intergalactic$
+	Include_11=edid|#^recipe_weapon_melee_facebreaker$
+	Include_12=edid|#^recipe_weapon_melee_plasmasword$
+	Include_13=edid|#^recipe_weapon_melee_warglaive$
+	Include_14=edid|#^recipe_weapon_ranged_bosrocketlauncher$
+	Include_15=edid|#^recipe_weapon_rangedbospistol_29$
+	Include_16=edid|#^recipe_workshop_flatwoodsmonstertube$
+	Include_17=edid|#^recipe_workshop_floatertubes$
+	Include_18=kwd_|NonPlayerTradable|00499F7A
+[EndRule]
+
+[StartRule]
+	Header=>>SEASONAL
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>>MEAT WEEK
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^meat_recipe_(.*)
+	Include_1=edid|#^recipe_backpack_standard_material_chally$
+	Include_2=edid|#^recipe_cooking_meatweek_tatosalad$
+	Include_3=edid|#^recipe_meat_(.*)
+	Include_4=edid|#^recipe_weapon_ranged_peppershaker$
+	Include_5=edid|#^recipe_weapon_thrown_meatcleaver$
+	Include_6=edid|#^recipe_workshop_crafting_craftingcooking_animalistic_grill$
+	Include_7=edid|#^recipe_workshop_crafting_craftingcooking_grocerycartgrill$
+	Include_8=edid|#^recipe_workshop_curtaindoor_bloody$
+	Include_9=edid|#^recipe_workshop_floordecor_decoyduckset$
+	Include_10=edid|#^recipe_workshop_floordecor_plasticfruitbowl$
+	Include_11=edid|#^recipe_workshop_floordecor_plushie_peppino$
+	Include_12=edid|#^recipe_workshop_floordecor_plushie_punty$
+	Include_13=edid|#^recipe_workshop_floordecor_plushie_wilbermcpigg$
+	Include_14=edid|#^recipe_workshop_floordecor_rugs_bloody$
+	Include_15=edid|#^recipe_workshop_floordecor_stuffedmutanthound$
+	Include_16=edid|#^recipe_workshop_lights_wall_mutanthounddiagram$
+	Include_17=edid|#^recipe_workshop_lights_wall_supermutantdiagram$
+	Include_18=edid|#^recipe_workshop_walldecor_plasticfruitwreath$
+	Include_19=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
+[StartRule]
+	Header=>>>FASNACHT
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^e07a_(.*)
+	Include_1=edid|#^recipe_cooking_(.*)_fasnacht
+	Include_2=edid|#^recipe_workshop_(.*)fasnacht
+	Include_3=edid|#^recipe_workshop_floordecor_herdsmansbell_(.*)
+	Include_4=edid|#^recipe_workshop_floordecor_rugs_megasloth$
+	Include_5=edid|#^recipe_workshop_floordecor_stuffedmutanthound$
+	Include_6=edid|#^recipe_workshop_walldecor_76taxidermy_megasloth$
+	Include_7=edid|#^recipe_workshop_walldecor_flower(ing)?box(.*)
+	Include_8=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
+[StartRule]
+	Header=>>>INVADERS
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^invaders_recipe_(.*)
+	Include_1=edid|#^recipe_(.*)_melee_electroenforcer(.*)
+	Include_2=edid|#^recipe_invaders_(.*)
+	Include_3=edid|#^recipe_mod_alienblaster_alienmag_dt(.*)
+	Include_4=edid|#^recipe_mod_alienrifle_receiver_(.*)
+	Include_5=edid|#^recipe_weapon_ranged_alien(.*)
+	Include_6=edid|#^recipe_workshop_alienoperatingbed$
+	Include_7=edid|#^recipe_workshop_container_stashbox_zetan$
+	Include_8=edid|#^recipe_workshop_floordecor_asteroid$
+	Include_9=edid|#^recipe_workshop_human(fe)?maletube
+	Include_10=edid|#^recipe_workshop_zetantube$
+	Include_11=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
+[StartRule]
+	Header=>>>EQUINOX
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^e07a_(.*)
+	Include_1=edid|#^recipe_mod_chainsaw_paint_skeptikill$
+	Include_2=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_(.*)mothman
+	Include_3=edid|#^recipe_workshop_floordecor_mothman_enlightenedlantern$
+	Include_4=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
+[StartRule]
+	Header=>>>BIG BLOOM
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^sse_recipe_(.*)
+	Include_1=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
+[StartRule]
+	Header=>>>HOLIDAY GIFTS
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^recipe_armor_vaultsuit51_underarmor$
+	Include_1=edid|#^recipe_backpack_standard_material_atomicsetltdhandbag$
+	Include_2=edid|#^recipe_mod_powerarmor_material_paint_camoblue$
+	Include_3=edid|#^recipe_mod_weapon_44_material_camoblue$
+	Include_4=edid|#^recipe_outfit_jitterbugjudy$
+	Include_5=edid|#^recipe_peppermintflair$
+	Include_6=edid|#^recipe_snowmanheadflair$
+	Include_7=edid|#^recipe_workshop_bed_princesscastlepink_sleepingbag$
+	Include_8=edid|#^recipe_workshop_ceiling_light_truck$
+	Include_9=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_holidaytree_(.*)
+	Include_10=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_ribbonbell$
+	Include_11=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_santa_01$
+	Include_12=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_snowflake_01$
+	Include_13=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_snowman$
+	Include_14=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_target$
+	Include_15=edid|#^recipe_workshop_defensivestructures_barbedwirefence$
+	Include_16=edid|#^recipe_workshop_floordecor_arearug_nukagirl$
+	Include_17=edid|#^recipe_workshop_floordecor_giantbrontosaurus_red
+	Include_18=edid|#^recipe_workshop_floordecor_musket_stack_monument$
+	Include_19=edid|#^recipe_workshop_floordecor_plushie_behemothboss$
+	Include_20=edid|#^recipe_workshop_floordecor_plushie_brahmin$
+	Include_21=edid|#^recipe_workshop_floordecor_strawgoat$
+	Include_22=edid|#^recipe_workshop_floordecor_taxidermy_gorilla_(.*)
+	Include_23=edid|#^recipe_workshop_floordecor_vintagewatercooler$
+	Include_24=edid|#^recipe_workshop_lights_plastiform(.*)
+	Include_25=edid|#^recipe_workshop_lights_redrocketgas(.*)
+	Include_26=edid|#^recipe_workshop_lights_starlight$
+	Include_27=edid|#^recipe_workshop_lights_wintericicle$
+	Include_28=edid|#^recipe_workshop_walldecor_condemnednotificationsigns$
+	Include_29=edid|#^recipe_workshop_walldecor_santacrash$
+	Include_30=edid|#^recipe_workshop_walldecor_tatteredcurtains$
+	Include_31=edid|#^recipe_workshop_walldecor_wallmountedfan$
+	Include_32=edid|#^recipe_workshop_walldecor_windchime_molerat$
+	Include_33=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
+[StartRule]
+	Header=>>>PAILS
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^recipe_(.*)_insurgent(.*)
+	Include_1=edid|#^recipe_(.*)_treasurehunter(.*)
+	Include_2=edid|#^recipe_backpack_standard_material_safari_(.*)
+	Include_3=edid|#^recipe_headwear_marine_helmet$
+	Include_4=edid|#^recipe_mod_melee_knife_dagger_radstag$
+	Include_5=edid|#^recipe_mod_powerarmor_material_paint_pinksprinkles$
+	Include_6=edid|#^recipe_mod_supersledge_melee_paint_strongmanhammer$
+	Include_7=edid|#^recipe_mod_weapon_lasergun_material_camoblue$
+	Include_8=edid|#^recipe_mod_weapon_missilelauncher_material_atomcats$
+	Include_9=edid|#^recipe_workshop_bed_bedofnails$
+	Include_10=edid|#^recipe_workshop_cavecrickettube$
+	Include_11=edid|#^recipe_workshop_container_stashbox_supply_crate_small$
+	Include_12=edid|#^recipe_workshop_firestationbell$
+	Include_13=edid|#^recipe_workshop_floordecor_animatronic_clown$
+	Include_14=edid|#^recipe_workshop_floordecor_arearug_vault76$
+	Include_15=edid|#^recipe_workshop_floordecor_arearug_wvstatebird$
+	Include_16=edid|#^recipe_workshop_floordecor_balloonarch$
+	Include_17=edid|#^recipe_workshop_floordecor_carnivalballoons$
+	Include_18=edid|#^recipe_workshop_floordecor_circus_trailer$
+	Include_19=edid|#^recipe_workshop_floordecor_junkyard_fountain$
+	Include_20=edid|#^recipe_workshop_floordecor_plushie_scorchbeastqueen$
+	Include_21=edid|#^recipe_workshop_floordecor_plushie_snallygaster$
+	Include_22=edid|#^recipe_workshop_floordecor_plushie_wannamango$
+	Include_23=edid|#^recipe_workshop_floordecor_statue_small_posed_vaultgirl$
+	Include_24=edid|#^recipe_workshop_lights_grafton_monster_lamp$
+	Include_25=edid|#^recipe_workshop_rawcement_barricade_spikes$
+	Include_26=edid|#^recipe_workshop_scorchedtube$
+	Include_27=edid|#^recipe_workshop_tv_aquarium$
+	Include_28=edid|#^recipe_workshop_walldecor_wallclocks_neonlightdiner$
+	Include_29=edid|#^recipe_workshop_yaoguaitube$
+	Include_30=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
+[StartRule]
+	Header=>>>SPOOKY BAGS
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^recipe_backpack_standard_material_princess$
+	Include_1=edid|#^recipe_headwear_executioner2$
+	Include_2=edid|#^recipe_headwear_skullrider_rad$
+	Include_3=edid|#^recipe_mod_assaultrifle_paint_wraithswrath$
+	Include_4=edid|#^recipe_mod_chainsaw_paint_ghostlygrinder$
+	Include_5=edid|#^recipe_mod_powerarmor_material_paint_hellfire_variant_(.*)
+	Include_6=edid|#^recipe_workshop_(.*)jackolite
+	Include_7=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_ghost(.*)
+	Include_8=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_jackolantern(.*)
+	Include_9=edid|#^recipe_workshop_ceilingdecor_honeycomb_paper_spider$
+	Include_10=edid|#^recipe_workshop_floordecor_giantdinosaur_red$
+	Include_11=edid|#^recipe_workshop_floordecor_pumpkincarved(.*)
+	Include_12=edid|#^recipe_workshop_floordecor_pumpkinrack(.*)
+	Include_13=edid|#^recipe_workshop_floordecor_skeleton_drbones$
+	Include_14=edid|#^recipe_workshop_floordecor_statues_grimreapercardboardcutouts$
+	Include_15=edid|#^recipe_workshop_floordecor_statues_scarecrows$
+	Include_16=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
