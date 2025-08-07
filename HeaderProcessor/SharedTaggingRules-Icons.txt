@@ -1332,6 +1332,73 @@
 [EndRule]
 
 [StartRule]
+	Header=%s - CE
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^e06_colossus_recipe_(.*)
+	Include_1=edid|#^e08a_recipe_(.*)
+	Include_2=edid|#^e09a_recipe_(.*)
+	Include_3=edid|#^e09b_(workshop_)?recipe_(.*)
+	Include_4=edid|#^e09c_recipe_(.*)
+	Include_5=edid|#^e09d_recipe_workshop_(.*)
+	Include_6=edid|#^mile_workshop_recipe_cryptidthrone$
+	Include_7=edid|#^moon_ambush_(workshop_)?recipe_(.*)
+	Include_8=edid|#^moon_herd_(workshop_)?recipe_(.*)
+	Include_9=edid|#^moon_recipe_workshop_floordecor_rugs_brahminrug$
+	Include_10=edid|#^moon_recipe_workshop_standaloneposter_bluedevil$
+	Include_11=edid|#^moon_recipe_workshop_standaloneposter_ogua$
+	Include_12=edid|#^nwot_recipe_cappyballoon$
+	Include_13=edid|#^nwot_recipe_mod_supersledge_melee_paint_cappysmasher$
+	Include_14=edid|#^nwot_recipe_workshop_floordecor_adbarriers$
+	Include_15=edid|#^nwot_recipe_workshop_standaloneposter$
+	Include_16=edid|#^nwot_recipe_workshop_structure_nukabottlekiosk$
+	Include_17=edid|#^nwot_recipe_workshop_structure_nukastallcrates$
+	Include_18=edid|#^recipe_armor_powerarmor_ultracite_[a-z]*$
+	Include_19=edid|#^recipe_cooking_sheepsquatchmeattasty$
+	Include_20=edid|#^recipe_cooking_smores$
+	Include_21=edid|#^recipe_weapon_ranged_assaultronhead$
+	Include_22=edid|#^recipe_workshop_bed_cryogenicbed$
+	Include_23=edid|#^recipe_workshop_displays_beersteins_robot$
+	Include_24=edid|#^recipe_workshop_floordecor_globe_mars$
+	Include_25=edid|#^recipe_workshop_floordecor_nwot_carnival_statue_0[0-9]$
+	Include_26=edid|#^recipe_workshop_miscstructures_tent_campfiretales$
+	Include_27=edid|#^recipe_workshop_nwot(.*)
+	Include_28=edid|#^recipe_workshop_walldecor_rusteaglebanner$
+	Include_29=edid|#^storm_clothes_recipe_burntlabcoat0[12]$
+	Include_30=edid|#^storm_clothes_workshop_recipe_shenandoahtshirtslacks$
+	Include_31=edid|#^storm_recipe_turkey_backpack$
+	Include_32=edid|#^storm_recipe_workshop_chair_bossarmchair01$
+	Include_33=edid|#^storm_recipe_workshop_floordecor_lightningharvester$
+	Include_34=edid|#^storm_recipe_workshop_floordecor_minibossfigure$
+	Include_35=edid|#^storm_recipe_workshop_floordecor_moethemole_cutout$
+	Include_36=edid|#^storm_recipe_workshop_floordecor_robotboss(.*)
+	Include_37=edid|#^storm_recipe_workshop_floordecor_shenandoahmaptable$
+	Include_38=edid|#^storm_recipe_workshop_floordecor_shenandoahsign03$
+	Include_39=edid|#^storm_recipe_workshop_floordecor_taxidermyradturkey$
+	Include_40=edid|#^storm_recipe_workshop_floordecor_wildlifesign01$
+	Include_41=edid|#^storm_recipe_workshop_floordecor_wildlifesign03$
+	Include_42=edid|#^storm_recipe_workshop_floordecor_wildlifesign04$
+	Include_43=edid|#^storm_recipe_workshop_floordecor_wildlifesign08$
+	Include_44=edid|#^storm_recipe_workshop_lostinatube$
+	Include_45=edid|#^storm_recipe_workshop_walldecor_(.*)
+	Include_46=edid|#storm_clothes_recipe_lost[a-z]*armour(_burnt)?
+	Include_47=edid|#storm_clothes_recipe_lost[a-z]*helmet(_burnt)?
+	Include_48=kwd_|ObjectTypeRecipe|003E1567
+	Exclude_0=kwd_|NonPlayerTradable|00499F7A
+[EndRule]
+
+[StartRule]
 	Header=>>SEASONAL
 	rSig=BOOK
 	fSig=FULL
