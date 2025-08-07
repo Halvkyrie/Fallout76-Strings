@@ -1193,7 +1193,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s - CR
+	Header=%s 
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -1332,7 +1332,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s - CE
+	Header=%s 
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -1399,7 +1399,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s - CW
+	Header=%s 
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
