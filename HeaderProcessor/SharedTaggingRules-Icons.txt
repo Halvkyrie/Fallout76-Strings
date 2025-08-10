@@ -22,6 +22,52 @@
 [EndRule]
 
 [StartRule]
+	Header=>>TRASH
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s [PH]Trash
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^bloodpackglowing$
+	Include_1=edid|#^en07_(.*)
+	Include_2=edid|#^ffz10_bioluminescentfluidpotion(_spoiled)?$
+	Include_3=edid|#^floraspecimen(.*)
+	Include_4=edid|#^glowingoneblood$
+	Include_5=edid|#^milk_brahmin_spoiled$
+	Include_6=edid|#^mirelurkmeatcooked$
+	Include_7=edid|#^mirelurkmeattastyjerky$
+	Include_8=edid|#^mirelurksoftshellmeatcooked$
+	Include_9=edid|#^potion_d01c_insectrepellent$
+	Include_10=edid|#^smores$
+	Include_11=edid|#^spoiledfood_(.*)
+[EndRule]
+
+[StartRule]
 	Header=>>FOOD/DRINK
 	rSig=ALCH
 	fSig=FULL
@@ -875,22 +921,56 @@
 [EndRule]
 
 [StartRule]
-	Header=%s 
+	Header=>>TRASH
 	rSig=MISC
 	fSig=FULL
-	enabled=-1
+	enabled=0
 	tagID=default
 	noKW=0
 	anyKW=0
-	hasCompo=-1
+	hasCompo=0
 	preProcess=0
 	fullReplace=0
 	includeOR=0
 	isFallBack=0
 	fallbackBank=0
 	regex=
-	Exclude_0=edid|legendaryshard
-	Exclude_1=kwd_|ObjectTypeLooseMod|00135C17
+[EndRule]
+
+[StartRule]
+	Header=%s [PH]Trash
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|MainframeCoreDamaged|0051AFFB
+	Include_1=form|SFZ14_Bomb_Bomb|003AF173
+[EndRule]
+
+[StartRule]
+	Header=>>MISC
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
 [EndRule]
 
 [StartRule]
@@ -927,6 +1007,23 @@
 	fallbackBank=0
 	regex=
 	Include_0=kwd_|MTR05_Breach_RewardKeyword|00309349
+[EndRule]
+
+[StartRule]
+	Header=>>MODS
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
 [EndRule]
 
 [StartRule]
@@ -1044,6 +1141,42 @@
 [EndRule]
 
 [StartRule]
+	Header=>>JUNK
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s 
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=-1
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Exclude_0=edid|legendaryshard
+	Exclude_1=kwd_|ObjectTypeLooseMod|00135C17
+[EndRule]
+
+[StartRule]
 	Header=>WEAPONS
 	rSig=WEAP
 	fSig=FULL
@@ -1123,6 +1256,81 @@
 [EndRule]
 
 [StartRule]
+	Header=>ARMOUR/APPAREL
+	rSig=ARMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>APPAREL
+	rSig=ARMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>>TRASH
+	rSig=ARMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s [PH]Trash
+	rSig=ARMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|Clothes_Arktos_Lab_Coat|003EFC5B
+	Include_1=form|Clothes_Sheepsquatch_Imposter_Outfit|003FB9AC
+	Include_2=form|Clothes_SheepsquatchMascotOutfit|00469D1B
+	Include_3=form|E01B_Encryptid_Clothes_WhiteFedora|0040FAC1
+	Include_4=form|Headwear_BeerHat|003621BC
+	Include_5=form|Headwear_Sheepsquatch_Imposter_Helmet|003FB9AE
+	Include_6=form|Headwear_SheepsquatchMascotHead|00469D1A
+[EndRule]
+
+[StartRule]
 	Header=>PLANS
 	rSig=BOOK
 	fSig=FULL
@@ -1179,7 +1387,7 @@
 	Header=%s [PH]Legacy
 	rSig=BOOK
 	fSig=FULL
-	enabled=0
+	enabled=-1
 	tagID=default
 	noKW=0
 	anyKW=0
@@ -1512,7 +1720,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH] Common Chem
+	Header=%s [PH]Common Chem
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -1547,7 +1755,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH] Common Cooking
+	Header=%s [PH]Common Cooking
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -1568,7 +1776,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH] Common Generic
+	Header=%s [PH]Common Generic
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -2048,7 +2256,7 @@
 	Header=>>TRASH
 	rSig=BOOK
 	fSig=FULL
-	enabled=-1
+	enabled=0
 	tagID=default
 	noKW=0
 	anyKW=0
@@ -2062,7 +2270,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH] Trash
+	Header=%s [PH]Trash
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -2087,5 +2295,59 @@
 	Include_8=edid|#^re_sceneps03_reward(.*)note
 	Include_9=edid|#^sse_(.*)
 	Exclude_0=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
+[StartRule]
+	Header=>HOLOTAPES
+	rSig=NOTE
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>TRASH
+	rSig=NOTE
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s [PH]Trash
+	rSig=NOTE
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^lc146_(.*)
+	Include_1=edid|#^sse_(.*)
+	Include_2=edid|#^w05_clue4_holotape$
 [EndRule]
 
