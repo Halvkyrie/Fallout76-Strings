@@ -550,11 +550,45 @@
 	isFallBack=-1
 	fallbackBank=0
 	regex=
+	Include_0=form|SFM04_Organic_RadShield|00081FDE
+	Include_1=form|SURV_DiseaseCure_Antibiotics|003E08A9
+	Include_2=form|SURV_DiseaseCure_HerbalMedicine|003E08A8
+[EndRule]
+
+[StartRule]
+	Header=
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=form|Bloodpack|00052409
+[EndRule]
+
+[StartRule]
+	Header=
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
 	Include_0=form|Addictol|000459C5
-	Include_1=form|Bloodpack|00052409
-	Include_2=form|SFM04_Organic_RadShield|00081FDE
-	Include_3=form|SURV_DiseaseCure_Antibiotics|003E08A9
-	Include_4=form|SURV_DiseaseCure_HerbalMedicine|003E08A8
 [EndRule]
 
 [StartRule]
