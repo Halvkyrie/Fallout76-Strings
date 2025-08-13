@@ -39,7 +39,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH]Trash
+	Header=%s 
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -464,7 +464,7 @@
 [EndRule]
 
 [StartRule]
-	Header= - C0
+	Header= 
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -494,7 +494,7 @@
 [EndRule]
 
 [StartRule]
-	Header=a
+	Header=
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -513,7 +513,7 @@
 [EndRule]
 
 [StartRule]
-	Header=b
+	Header=
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -536,7 +536,7 @@
 [EndRule]
 
 [StartRule]
-	Header=c
+	Header=
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -558,7 +558,7 @@
 [EndRule]
 
 [StartRule]
-	Header= - C1
+	Header= 
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -579,7 +579,7 @@
 [EndRule]
 
 [StartRule]
-	Header= - C2
+	Header= 
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -609,7 +609,7 @@
 [EndRule]
 
 [StartRule]
-	Header=a
+	Header=
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -632,7 +632,7 @@
 [EndRule]
 
 [StartRule]
-	Header=b
+	Header=
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -655,7 +655,7 @@
 [EndRule]
 
 [StartRule]
-	Header=c
+	Header=
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -938,7 +938,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH]Trash
+	Header=%s 
 	rSig=MISC
 	fSig=FULL
 	enabled=-1
@@ -1158,7 +1158,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s 
+	Header=%s 
 	rSig=MISC
 	fSig=FULL
 	enabled=-1
@@ -1307,7 +1307,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH]Trash
+	Header=%s 
 	rSig=ARMO
 	fSig=FULL
 	enabled=-1
@@ -1384,7 +1384,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH]Legacy
+	Header=%s [LEGACY]
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -1720,7 +1720,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH]Common Chem
+	Header=%s 
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -1755,7 +1755,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH]Common Cooking
+	Header=%s 
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -1776,7 +1776,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH]Common Generic
+	Header=%s 
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -2270,7 +2270,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH]Trash
+	Header=%s 
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -2332,7 +2332,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH]Trash
+	Header=%s 
 	rSig=NOTE
 	fSig=FULL
 	enabled=-1
