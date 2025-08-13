@@ -22,6 +22,52 @@
 [EndRule]
 
 [StartRule]
+	Header=>>TRASH
+	rSig=ALCH
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s - TRSH
+	rSig=ALCH
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^bloodpackglowing$
+	Include_1=edid|#^en07_(.*)
+	Include_2=edid|#^ffz10_bioluminescentfluidpotion(_spoiled)?$
+	Include_3=edid|#^floraspecimen(.*)
+	Include_4=edid|#^glowingoneblood$
+	Include_5=edid|#^milk_brahmin_spoiled$
+	Include_6=edid|#^mirelurkmeatcooked$
+	Include_7=edid|#^mirelurkmeattastyjerky$
+	Include_8=edid|#^mirelurksoftshellmeatcooked$
+	Include_9=edid|#^potion_d01c_insectrepellent$
+	Include_10=edid|#^smores$
+	Include_11=edid|#^spoiledfood_(.*)
+[EndRule]
+
+[StartRule]
 	Header=>>FOOD/DRINK
 	rSig=ALCH
 	fSig=FULL
@@ -875,22 +921,56 @@
 [EndRule]
 
 [StartRule]
-	Header=%s - JNK
+	Header=>>TRASH
 	rSig=MISC
 	fSig=FULL
-	enabled=-1
+	enabled=0
 	tagID=default
 	noKW=0
 	anyKW=0
-	hasCompo=-1
+	hasCompo=0
 	preProcess=0
 	fullReplace=0
 	includeOR=0
 	isFallBack=0
 	fallbackBank=0
 	regex=
-	Exclude_0=edid|legendaryshard
-	Exclude_1=kwd_|ObjectTypeLooseMod|00135C17
+[EndRule]
+
+[StartRule]
+	Header=%s - TRSH
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|MainframeCoreDamaged|0051AFFB
+	Include_1=form|SFZ14_Bomb_Bomb|003AF173
+[EndRule]
+
+[StartRule]
+	Header=>>MISC
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
 [EndRule]
 
 [StartRule]
@@ -927,6 +1007,23 @@
 	fallbackBank=0
 	regex=
 	Include_0=kwd_|MTR05_Breach_RewardKeyword|00309349
+[EndRule]
+
+[StartRule]
+	Header=>>MODS
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
 [EndRule]
 
 [StartRule]
@@ -1044,6 +1141,42 @@
 [EndRule]
 
 [StartRule]
+	Header=>>JUNK
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s - JNK
+	rSig=MISC
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=-1
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Exclude_0=edid|legendaryshard
+	Exclude_1=kwd_|ObjectTypeLooseMod|00135C17
+[EndRule]
+
+[StartRule]
 	Header=>WEAPONS
 	rSig=WEAP
 	fSig=FULL
@@ -1077,6 +1210,30 @@
 	regex=
 	Include_0=kwd_|WeaponTypeGrenade|0010C415
 	Include_1=kwd_|WeaponTypeMine|0010C414
+	Exclude_0=kwd_|UI_WeaponTypeNukaGrenade|003CFD7C
+	Exclude_1=kwd_|UI_WeaponTypeNukaQuantumGrenade|006DDDB5
+	Exclude_2=kwd_|WeaponTypeThrowingKnife|003879A4
+[EndRule]
+
+[StartRule]
+	Header=%s - TX
+	rSig=WEAP
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|UI_WeaponTypeNukaGrenade|003CFD7C
+	Include_1=kwd_|UI_WeaponTypeNukaQuantumGrenade|006DDDB5
+	Include_2=kwd_|WeaponTypeGrenade|0010C415
+	Include_3=kwd_|WeaponTypeMine|0010C414
 	Exclude_0=kwd_|WeaponTypeThrowingKnife|003879A4
 [EndRule]
 
@@ -1096,6 +1253,81 @@
 	fallbackBank=0
 	regex=
 	Include_0=kwd_|WeaponTypeThrowingKnife|003879A4
+[EndRule]
+
+[StartRule]
+	Header=>ARMOUR/APPAREL
+	rSig=ARMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>APPAREL
+	rSig=ARMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>>TRASH
+	rSig=ARMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s - TRSH
+	rSig=ARMO
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|Clothes_Arktos_Lab_Coat|003EFC5B
+	Include_1=form|Clothes_Sheepsquatch_Imposter_Outfit|003FB9AC
+	Include_2=form|Clothes_SheepsquatchMascotOutfit|00469D1B
+	Include_3=form|E01B_Encryptid_Clothes_WhiteFedora|0040FAC1
+	Include_4=form|Headwear_BeerHat|003621BC
+	Include_5=form|Headwear_Sheepsquatch_Imposter_Helmet|003FB9AE
+	Include_6=form|Headwear_SheepsquatchMascotHead|00469D1A
 [EndRule]
 
 [StartRule]
@@ -1149,6 +1381,437 @@
 	Include_16=edid|#^recipe_workshop_flatwoodsmonstertube$
 	Include_17=edid|#^recipe_workshop_floatertubes$
 	Include_18=kwd_|NonPlayerTradable|00499F7A
+[EndRule]
+
+[StartRule]
+	Header=%s [LEGACY]
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=form|Recipe_Workshop_FloorDecor_StrawGoat_OLD|0072E371
+	Include_1=form|Recipe_Workshop_FloorDecor_VintageWaterCooler_2|00634B17
+	Include_2=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
+[StartRule]
+	Header=>>COMMON
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s - CR
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^recipe_(.*)scope(.*)_nv(.*)
+	Include_1=edid|#^recipe_armor_bos_[a-z]*_underarmor$
+	Include_2=edid|#^recipe_armor_combat_[a-z]*_[a-z]*$
+	Include_3=edid|#^recipe_armor_leather_[a-z]*_[a-z]*$
+	Include_4=edid|#^recipe_armor_marine_[a-z]*$
+	Include_5=edid|#^recipe_armor_marine_underarmor_[a-z]*$
+	Include_6=edid|#^recipe_armor_metal_[a-z]*_[a-z]*$
+	Include_7=edid|#^recipe_armor_raider_[a-z]*_[a-z]*$
+	Include_8=edid|#^recipe_armor_raider_underarmor_[a-z]*$
+	Include_9=edid|#^recipe_armor_robot_[a-z]*_[a-z]*$
+	Include_10=edid|#^recipe_armor_trapper_[a-z]*$
+	Include_11=edid|#^recipe_armor_vaultsuit76_underarmor_clean$
+	Include_12=edid|#^recipe_armor_vaultsuitvt_underarmor$
+	Include_13=edid|#^recipe_dlc01_mod_lightninggun_barrel_chargeshotgun$
+	Include_14=edid|#^recipe_dlc01_mod_melee_[a-z]*_shock$
+	Include_15=edid|#^recipe_dlc03_mod_armor_marine_(.*)
+	Include_16=edid|#^recipe_dlc03_mod_harpoongun_(.*)
+	Include_17=edid|#^recipe_dlc03_mod_levergun_(.*)
+	Include_18=edid|#^recipe_mod_10mmsmg_magazine_ammo$
+	Include_19=edid|#^recipe_mod_armor_combat_(.*)
+	Include_20=edid|#^recipe_mod_armor_leather_(.*)
+	Include_21=edid|#^recipe_mod_armor_metal_(.*)
+	Include_22=edid|#^recipe_mod_armor_raidermod_(.*)
+	Include_23=edid|#^recipe_mod_armor_robot_(.*)
+	Include_24=edid|#^recipe_mod_armor_trapper_(.*)
+	Include_25=edid|#^recipe_mod_assaultrifle_receiver_(.*)
+	Include_26=edid|#^recipe_mod_broadsider_magazine_multi$
+	Include_27=edid|#^recipe_mod_combatrifle_(.*)
+	Include_28=edid|#^recipe_mod_combatshotgun_(.*)
+	Include_29=edid|#^recipe_mod_doublebarrelshotgun_receiver_scorchedkiller$
+	Include_30=edid|#^recipe_mod_fatman_barrel_mirv$
+	Include_31=edid|#^recipe_mod_flamer_receiver_tanknapalm$
+	Include_32=edid|#^recipe_mod_gammagun_specialmuzzle_charger$
+	Include_33=edid|#^recipe_mod_gatlinglaser_(.*)
+	Include_34=edid|#^recipe_mod_huntingrifle_(.*)
+	Include_35=edid|#^recipe_mod_lasergun_(.*)
+	Include_36=edid|#^recipe_mod_levergun_receiver_scorchedkiller$
+	Include_37=edid|#^recipe_mod_melee_powerfist_heated$
+	Include_38=edid|#^recipe_mod_melee_ripper_bladeslarge$
+	Include_39=edid|#^recipe_mod_melee_shishkebab_extraflamejets$
+	Include_40=edid|#^recipe_mod_minigun_barrelminigun_tribarrel$
+	Include_41=edid|#^recipe_mod_missilelauncher_(.*)
+	Include_42=edid|#^recipe_mod_pipeboltaction_(.*)
+	Include_43=edid|#^recipe_mod_pipegun_(.*)
+	Include_44=edid|#^recipe_mod_piperevolver_(.*)
+	Include_45=edid|#^recipe_mod_plasmagun_(.*)
+	Include_46=edid|#^recipe_mod_railwayrifle_(.*)
+	Include_47=edid|#^recipe_mod_singleactionrevolver_grip_better1$
+	Include_48=edid|#^recipe_mod_submachinegun_(.*)
+	Include_49=edid|#^recipe_mod_ultracite_gatlinglaser_(.*)
+	Include_50=edid|#^recipe_mod_ultracitelasergun_(.*)
+	Include_51=edid|#^recipe_tinkers_grenadecryo$
+	Include_52=edid|#^recipe_tinkers_grenadefragmirv$
+	Include_53=edid|#^recipe_tinkers_grenadenuka$
+	Include_54=edid|#^recipe_tinkers_grenadenukaquantum$
+	Include_55=edid|#^recipe_tinkers_grenadepulse$
+	Include_56=edid|#^recipe_tinkers_minecryo$
+	Include_57=edid|#^recipe_tinkers_minenuke$
+	Include_58=edid|#^recipe_tinkers_minepulse$
+	Include_59=edid|#^recipe_weapon_melee_baseballbat$
+	Include_60=edid|#^recipe_weapon_melee_baton$
+	Include_61=edid|#^recipe_weapon_melee_bowieknife$
+	Include_62=edid|#^recipe_weapon_melee_boxingglove$
+	Include_63=edid|#^recipe_weapon_melee_chineseofficersword$
+	Include_64=edid|#^recipe_weapon_melee_cultistblade$
+	Include_65=edid|#^recipe_weapon_melee_cultistdagger$
+	Include_66=edid|#^recipe_weapon_melee_deathtambo$
+	Include_67=edid|#^recipe_weapon_melee_golfclub$
+	Include_68=edid|#^recipe_weapon_melee_guitarsword$
+	Include_69=edid|#^recipe_weapon_melee_knuckles$
+	Include_70=edid|#^recipe_weapon_melee_leadpipe$
+	Include_71=edid|#^recipe_weapon_melee_meathook$
+	Include_72=edid|#^recipe_weapon_melee_moleminergauntlet$
+	Include_73=edid|#^recipe_weapon_melee_pipewrench$
+	Include_74=edid|#^recipe_weapon_melee_pitchfork$
+	Include_75=edid|#^recipe_weapon_melee_polehook$
+	Include_76=edid|#^recipe_weapon_melee_poolcue$
+	Include_77=edid|#^recipe_weapon_melee_powerfist$
+	Include_78=edid|#^recipe_weapon_melee_revolutionarysword$
+	Include_79=edid|#^recipe_weapon_melee_rollingpin$
+	Include_80=edid|#^recipe_weapon_melee_shishkebab$
+	Include_81=edid|#^recipe_weapon_melee_sickle$
+	Include_82=edid|#^recipe_weapon_melee_skisword$
+	Include_83=edid|#^recipe_weapon_melee_sledgehammer$
+	Include_84=edid|#^recipe_weapon_melee_spear$
+	Include_85=edid|#^recipe_weapon_melee_supersledge$
+	Include_86=edid|#^recipe_weapon_melee_switchblade$
+	Include_87=edid|#^recipe_weapon_melee_tireiron$
+	Include_88=edid|#^recipe_weapon_melee_walkingcane$
+	Include_89=edid|#^recipe_weapon_melee_wardrum$
+	Include_90=edid|#^recipe_weapon_melee_woodcuttingaxe$
+	Include_91=edid|#^recipe_weapon_ranged_10mmsmg$
+	Include_92=edid|#^recipe_weapon_ranged_44$
+	Include_93=edid|#^recipe_weapon_ranged_50calmachinegun$
+	Include_94=edid|#^recipe_weapon_ranged_autogrenadelauncher$
+	Include_95=edid|#^recipe_weapon_ranged_broadsider$
+	Include_96=edid|#^recipe_weapon_ranged_combatrifle_mq$
+	Include_97=edid|#^recipe_weapon_ranged_combatshotgun$
+	Include_98=edid|#^recipe_weapon_ranged_crossbow$
+	Include_99=edid|#^recipe_weapon_ranged_cryolater$
+	Include_100=edid|#^recipe_weapon_ranged_doublebarrelshotgun_mq$
+	Include_101=edid|#^recipe_weapon_ranged_gammagun$
+	Include_102=edid|#^recipe_weapon_ranged_gatlinggun$
+	Include_103=edid|#^recipe_weapon_ranged_gatlinglaser$
+	Include_104=edid|#^recipe_weapon_ranged_harpoongun$
+	Include_105=edid|#^recipe_weapon_ranged_levergun$
+	Include_106=edid|#^recipe_weapon_ranged_lightninggun$
+	Include_107=edid|#^recipe_weapon_ranged_m79$
+	Include_108=edid|#^recipe_weapon_ranged_minigun_mq$
+	Include_109=edid|#^recipe_weapon_ranged_missilelauncher_mq$
+	Include_110=edid|#^recipe_weapon_ranged_plasmagun$
+	Include_111=edid|#^recipe_weapon_ranged_pumpactionshotgun$
+	Include_112=edid|#^recipe_weapon_ranged_radiumrifle$
+	Include_113=edid|#^recipe_weapon_ranged_revolver$
+	Include_114=edid|#^recipe_weapon_ranged_singleactionrevolver$
+	Include_115=edid|#^recipe_weapon_ranged_submachinegun$
+	Include_116=edid|#^recipe_workshop_doors_doorsmetal_security$
+	Include_117=edid|#^recipe_workshop_walldecor_signsmetal$
+	Include_118=kwd_|ObjectTypeRecipe|003E1567
+	Exclude_0=edid|antiscorchbeast$
+	Exclude_1=edid|lining_torso_explosion2
+	Exclude_2=kwd_|NonPlayerTradable|00499F7A
+[EndRule]
+
+[StartRule]
+	Header=%s - CE
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^e06_colossus_recipe_(.*)
+	Include_1=edid|#^e08a_recipe_(.*)
+	Include_2=edid|#^e09a_recipe_(.*)
+	Include_3=edid|#^e09b_(workshop_)?recipe_(.*)
+	Include_4=edid|#^e09c_recipe_(.*)
+	Include_5=edid|#^e09d_recipe_workshop_(.*)
+	Include_6=edid|#^mile_workshop_recipe_cryptidthrone$
+	Include_7=edid|#^moon_ambush_(workshop_)?recipe_(.*)
+	Include_8=edid|#^moon_herd_(workshop_)?recipe_(.*)
+	Include_9=edid|#^moon_recipe_workshop_floordecor_rugs_brahminrug$
+	Include_10=edid|#^moon_recipe_workshop_standaloneposter_bluedevil$
+	Include_11=edid|#^moon_recipe_workshop_standaloneposter_ogua$
+	Include_12=edid|#^nwot_recipe_cappyballoon$
+	Include_13=edid|#^nwot_recipe_mod_supersledge_melee_paint_cappysmasher$
+	Include_14=edid|#^nwot_recipe_workshop_floordecor_adbarriers$
+	Include_15=edid|#^nwot_recipe_workshop_standaloneposter$
+	Include_16=edid|#^nwot_recipe_workshop_structure_nukabottlekiosk$
+	Include_17=edid|#^nwot_recipe_workshop_structure_nukastallcrates$
+	Include_18=edid|#^recipe_armor_powerarmor_ultracite_[a-z]*$
+	Include_19=edid|#^recipe_cooking_sheepsquatchmeattasty$
+	Include_20=edid|#^recipe_cooking_smores$
+	Include_21=edid|#^recipe_weapon_ranged_assaultronhead$
+	Include_22=edid|#^recipe_workshop_bed_cryogenicbed$
+	Include_23=edid|#^recipe_workshop_displays_beersteins_robot$
+	Include_24=edid|#^recipe_workshop_floordecor_globe_mars$
+	Include_25=edid|#^recipe_workshop_floordecor_nwot_carnival_statue_0[0-9]$
+	Include_26=edid|#^recipe_workshop_miscstructures_tent_campfiretales$
+	Include_27=edid|#^recipe_workshop_nwot(.*)
+	Include_28=edid|#^recipe_workshop_walldecor_rusteaglebanner$
+	Include_29=edid|#^storm_clothes_recipe_burntlabcoat0[12]$
+	Include_30=edid|#^storm_clothes_workshop_recipe_shenandoahtshirtslacks$
+	Include_31=edid|#^storm_recipe_turkey_backpack$
+	Include_32=edid|#^storm_recipe_workshop_chair_bossarmchair01$
+	Include_33=edid|#^storm_recipe_workshop_floordecor_lightningharvester$
+	Include_34=edid|#^storm_recipe_workshop_floordecor_minibossfigure$
+	Include_35=edid|#^storm_recipe_workshop_floordecor_moethemole_cutout$
+	Include_36=edid|#^storm_recipe_workshop_floordecor_robotboss(.*)
+	Include_37=edid|#^storm_recipe_workshop_floordecor_shenandoahmaptable$
+	Include_38=edid|#^storm_recipe_workshop_floordecor_shenandoahsign03$
+	Include_39=edid|#^storm_recipe_workshop_floordecor_taxidermyradturkey$
+	Include_40=edid|#^storm_recipe_workshop_floordecor_wildlifesign01$
+	Include_41=edid|#^storm_recipe_workshop_floordecor_wildlifesign03$
+	Include_42=edid|#^storm_recipe_workshop_floordecor_wildlifesign04$
+	Include_43=edid|#^storm_recipe_workshop_floordecor_wildlifesign08$
+	Include_44=edid|#^storm_recipe_workshop_lostinatube$
+	Include_45=edid|#^storm_recipe_workshop_walldecor_(.*)
+	Include_46=edid|#storm_clothes_recipe_lost[a-z]*armour(_burnt)?
+	Include_47=edid|#storm_clothes_recipe_lost[a-z]*helmet(_burnt)?
+	Include_48=kwd_|ObjectTypeRecipe|003E1567
+	Exclude_0=kwd_|NonPlayerTradable|00499F7A
+[EndRule]
+
+[StartRule]
+	Header=%s - CW
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^recipe_workshop_appliances_bathroombathtub_broken$
+	Include_1=edid|#^recipe_workshop_appliances_bathroomtoilet_broken$
+	Include_2=edid|#^recipe_workshop_appliances_cigarettemachine$
+	Include_3=edid|#^recipe_workshop_appliances_grill01$
+	Include_4=edid|#^recipe_workshop_appliances_hightechashtray_dirty$
+	Include_5=edid|#^recipe_workshop_appliances_icemachine$
+	Include_6=edid|#^recipe_workshop_appliances_jukebox$
+	Include_7=edid|#^recipe_workshop_appliances_milkmachine$
+	Include_8=edid|#^recipe_workshop_appliances_nukacolamachine$
+	Include_9=edid|#^recipe_workshop_appliances_picnicgrill$
+	Include_10=edid|#^recipe_workshop_appliances_stove$
+	Include_11=edid|#^recipe_workshop_bed_bedmilitarycot$
+	Include_12=edid|#^recipe_workshop_chairs_chairs_wood_garden$
+	Include_13=edid|#^recipe_workshop_chairs_chairs_wood_rockers$
+	Include_14=edid|#^recipe_workshop_chairs_chairs_wood_stool$
+	Include_15=edid|#^recipe_workshop_chairs_kitchen01$
+	Include_16=edid|#^recipe_workshop_chairs_stools_metal$
+	Include_17=edid|#^recipe_workshop_container_bearproof_trashcan$
+	Include_18=edid|#^recipe_workshop_container_dumpster01$
+	Include_19=edid|#^recipe_workshop_container_footlocker$
+	Include_20=edid|#^recipe_workshop_container_metalbox$
+	Include_21=edid|#^recipe_workshop_container_officefilecabinets$
+	Include_22=edid|#^recipe_workshop_container_playerhouse_dressers$
+	Include_23=edid|#^recipe_workshop_container_prewar_newsstand$
+	Include_24=edid|#^recipe_workshop_container_prewar_trashcan$
+	Include_25=edid|#^recipe_workshop_container_prewar_woodcrate$
+	Include_26=edid|#^recipe_workshop_container_toolboxlarge$
+	Include_27=edid|#^recipe_workshop_couches_elegant$
+	Include_28=edid|#^recipe_workshop_couches_modern$
+	Include_29=edid|#^recipe_workshop_couches_office$
+	Include_30=edid|#^recipe_workshop_doors_doorsmetal_diner$
+	Include_31=edid|#^recipe_workshop_doors_doorswood_painted$
+	Include_32=edid|#^recipe_workshop_doors_doorswood_shack$
+	Include_33=edid|#^recipe_workshop_floordecor_misc_lawnflamingos$
+	Include_34=edid|#^recipe_workshop_floordecor_misc_pottedplants$
+	Include_35=edid|#^recipe_workshop_floordecor_misc_redrocketgassign01$
+	Include_36=edid|#^recipe_workshop_floordecor_rugs_daisyrug$
+	Include_37=edid|#^recipe_workshop_floordecor_rugs_rug01$
+	Include_38=edid|#^recipe_workshop_floordecor_rugs_rugs02$
+	Include_39=edid|#^recipe_workshop_floordecor_rugs_welcomemats$
+	Include_40=edid|#^recipe_workshop_floordecor_statues_baseball01$
+	Include_41=edid|#^recipe_workshop_floordecor_statues_fountain01$
+	Include_42=edid|#^recipe_workshop_floordecor_statues_lions$
+	Include_43=edid|#^recipe_workshop_instruments_pianos$
+	Include_44=edid|#^recipe_workshop_instruments_wind$
+	Include_45=edid|#^recipe_workshop_instruments_wood$
+	Include_46=edid|#^recipe_workshop_lights_lightboxes$
+	Include_47=edid|#^recipe_workshop_lights_misclights$
+	Include_48=edid|#^recipe_workshop_lights_tablelamps$
+	Include_49=edid|#^recipe_workshop_lights_tracklights$
+	Include_50=edid|#^recipe_workshop_miscstructures_basketballhoop$
+	Include_51=edid|#^recipe_workshop_miscstructures_basketballhoop02$
+	Include_52=edid|#^recipe_workshop_miscstructures_portapotty$
+	Include_53=edid|#^recipe_workshop_resources_collector_fertilizer$
+	Include_54=edid|#^recipe_workshop_shelves_chargen_shelf03$
+	Include_55=edid|#^recipe_workshop_shelves_grocerystore_onesided$
+	Include_56=edid|#^recipe_workshop_shelves_grocerystore_twosided$
+	Include_57=edid|#^recipe_workshop_shelves_metal01$
+	Include_58=edid|#^recipe_workshop_tables_chargenwoodset$
+	Include_59=edid|#^recipe_workshop_tables_desks_wooden$
+	Include_60=edid|#^recipe_workshop_tables_hightechroundtable01_dirty$
+	Include_61=edid|#^recipe_workshop_tables_metaltables$
+	Include_62=edid|#^recipe_workshop_tables_moderndomestic_ruin_kitchen$
+	Include_63=edid|#^recipe_workshop_tables_moderndomestic_ruin_livingroom$
+	Include_64=edid|#^recipe_workshop_tables_npctablepicnicsit01$
+	Include_65=edid|#^recipe_workshop_tables_officedesk01$
+	Include_66=edid|#^recipe_workshop_tables_pooltable01$
+	Include_67=edid|#^recipe_workshop_tables_tablepatio01$
+	Include_68=edid|#^recipe_workshop_walldecor_poweredposter_adverts$
+	Include_69=edid|#^recipe_workshop_walldecor_signs_smallletters$
+	Include_70=edid|#^recipe_workshop_walldecor_signsmetal$
+	Include_71=edid|#^recipe_workshop_walldecor_wallpaintings_modern$
+	Include_72=edid|#^recipe_workshop_walls_barn_set$
+	Include_73=edid|#^recipe_workshop_walls_warehouse_set$
+	Include_74=kwd_|ObjectTypeRecipe|003E1567
+	Exclude_0=kwd_|NonPlayerTradable|00499F7A
+[EndRule]
+
+[StartRule]
+	Header=%s - CCC
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^recipe_chems_(.*)mentats$
+	Include_1=edid|#^recipe_chems_bufftats$
+	Include_2=edid|#^recipe_chems_fury$
+	Include_3=edid|#^recipe_chems_healingsalveforest$
+	Include_4=edid|#^recipe_chems_healingsalvesavagedivide$
+	Include_5=edid|#^recipe_chems_healingsalvetoxicvalley$
+	Include_6=edid|#^recipe_chems_overdrive$
+	Include_7=edid|#^recipe_chems_psycho(buff)?$
+	Include_8=edid|#^recipe_chems_radaway$
+	Include_9=edid|#^recipe_chems_skeetospit$
+	Include_10=edid|#^recipe_chems_stimpak$
+	Include_11=edid|#^recipe_chems_superstimpak$
+	Include_12=edid|#^recipe_diseasecure_herbalmedicine_cranberrybog$
+	Include_13=edid|#^recipe_diseasecure_herbalmedicine_savagedivide$
+	Include_14=edid|#^recipe_diseasecure_herbalmedicine_themire$
+	Include_15=edid|#^recipe_diseasecure_herbalmedicine_toxicvalley$
+	Include_16=kwd_|ObjectTypeRecipe|003E1567
+	Exclude_0=kwd_|NonPlayerTradable|00499F7A
+[EndRule]
+
+[StartRule]
+	Header=%s - CCR
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^recipe_cooking_(.*)gourmet$
+	Include_1=edid|#^recipe_cooking_(.*)tasty(.*)
+	Include_2=kwd_|ObjectTypeRecipe|003E1567
+	Exclude_0=kwd_|NonPlayerTradable|00499F7A
+[EndRule]
+
+[StartRule]
+	Header=%s - CG
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^fishing_recipe_workshop_tables_drownedfancydesk$
+	Include_1=edid|#^fishing_workshop_recipe_chumtrough$
+	Include_2=edid|#^fishing_workshop_recipe_creatureinjar_eel$
+	Include_3=edid|#^fishing_workshop_recipe_drownedchesterfieldchair$
+	Include_4=edid|#^fishing_workshop_recipe_drownedchesterfieldsofa$
+	Include_5=edid|#^fishing_workshop_recipe_drownedcoffeetable$
+	Include_6=edid|#^fishing_workshop_recipe_drownedlamp_01$
+	Include_7=edid|#^fishing_workshop_recipe_drownedlamp_03$
+	Include_8=edid|#^fishing_workshop_recipe_drownedlamp_04$
+	Include_9=edid|#^fishing_workshop_recipe_drownedpresidentialdesk$
+	Include_10=edid|#^fishing_workshop_recipe_roddisplay_rodstand$
+	Include_11=edid|#^recipe_mod_bowieknife_material_paint_scout$
+	Include_12=edid|#^recipe_weapon_melee_assaultronblade$
+	Include_13=edid|#^recipe_weapon_melee_mrhandybuzzblade$
+	Include_14=edid|#^recipe_workshop_walldecor_76taxidermy_fireflyon$
+	Include_15=edid|#^recipe_workshop_walldecor_taxidermy_bloatfly$
+	Include_16=edid|#^recipe_workshop_walldecor_taxidermy_bloodbug$
+	Include_17=edid|#^recipe_workshop_walldecor_taxidermy_radroach$
+	Include_18=edid|#^recipe_workshop_walldecor_taxidermy_stingwing$
+	Include_19=edid|#^recipe_workshop_walldecor_taxidermy_tick$
+	Include_20=kwd_|ObjectTypeRecipe|003E1567
+	Exclude_0=kwd_|NonPlayerTradable|00499F7A
 [EndRule]
 
 [StartRule]
@@ -1570,5 +2233,121 @@
 	Include_14=edid|#^recipe_workshop_floordecor_statues_grimreapercardboardcutouts$
 	Include_15=edid|#^recipe_workshop_floordecor_statues_scarecrows$
 	Include_16=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
+[StartRule]
+	Header=>NOTES
+	rSig=BOOK
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>TRASH
+	rSig=BOOK
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s - TRSH
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^atx_book_fortunes[0-9]{1,2}$
+	Include_1=edid|#^e01b_herd_farmhandnote(.*)
+	Include_2=edid|#^e01f_fasnacht_analysis_(.*)
+	Include_3=edid|#^e08a_note_(.*)
+	Include_4=edid|#^e08b_note_(.*)
+	Include_5=edid|#^lc005_aaronholt_(.*)
+	Include_6=edid|#^mtr10_robotnote$
+	Include_7=edid|#^nwot_fortunemajor_(.*)
+	Include_8=edid|#^re_sceneps03_reward(.*)note
+	Include_9=edid|#^sse_(.*)
+	Exclude_0=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
+[StartRule]
+	Header=>HOLOTAPES
+	rSig=NOTE
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>TRASH
+	rSig=NOTE
+	fSig=FULL
+	enabled=0
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s - TRSH
+	rSig=NOTE
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^lc146_(.*)
+	Include_1=edid|#^sse_(.*)
+	Include_2=edid|#^w05_clue4_holotape$
 [EndRule]
 
