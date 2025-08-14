@@ -1,3 +1,4 @@
 *.lnk
 *.swf
 Icons/Icons-*
+.bin-release/*
