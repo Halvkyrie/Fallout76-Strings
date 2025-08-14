@@ -44,9 +44,28 @@ Much like the Shared Tagging Header Rules, this is the personalized dictionary. 
 Certain items, **C**onstructible **OBJ**ects etc have been edited to have more unified naming for better sorting. Some items have rarity as a comment.  
 Some tags here end up incomplete if not used with the related header rule set.  
 
+---
+
+# Attribution
+
+The main license for this project itself is the MIT License, available in the LICENSE file.  
+This project does however make use some use of resources from other sources. The full licenses for these are available within the Licenses folder.  
+
+## Font Awesome Free
+Uses [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/) for its icons in .svg format  
+This project uses several icons from [Font Awesome][fontawesome] Free. A really lovely resource that's very fitting for this type of use.  
+Some are unedited, and these have attribution embedded within the .svg files themselves.  
+However, some are also edited, such as the cube-star icon. And editing them in Illustrator seems to remove the embedded attribution unfortunately.  
+
+## Roboto Condensed
+Uses [SIL OPEN FONT LICENSE Version 1.1](https://openfontlicense.org/open-font-license-official-text/)  
+The [Roboto Condensed][robotocondensed] font has been used to create some of the icons where text is used.  
+
 
 
 [xtranslator-nexus]: https://www.nexusmods.com/starfield/mods/313
 [xtranslator-gh]: https://github.com/MGuffin/xTranslator/
 [inventomatic-pipboy-nexus]: https://www.nexusmods.com/fallout76/mods/2324
 [inventomatic-stash-nexus]: https://www.nexusmods.com/fallout76/mods/2335
+[fontawesome]: https://fontawesome.com/
+[robotocondensed]: https://fonts.google.com/specimen/Roboto+Condensed
