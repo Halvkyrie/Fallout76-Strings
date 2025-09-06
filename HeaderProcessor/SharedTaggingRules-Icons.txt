@@ -1587,7 +1587,7 @@
 	Include_116=edid|#^recipe_workshop_doors_doorsmetal_security$
 	Include_117=edid|#^recipe_workshop_walldecor_signsmetal$
 	Include_118=kwd_|ObjectTypeRecipe|003E1567
-	Exclude_0=edid|antiscorchbeast$
+	Exclude_0=edid|#antiscorchbeast$
 	Exclude_1=edid|lining_torso_explosion2
 	Exclude_2=kwd_|NonPlayerTradable|00499F7A
 [EndRule]
@@ -1907,7 +1907,7 @@
 	Include_8=edid|#^recipe_workshop_crafting_craftingcooking_grocerycartgrill$
 	Include_9=edid|#^recipe_workshop_curtaindoor_bloody$
 	Include_10=edid|#^recipe_workshop_floordecor_decoyduckset$
-	Include_11=edid|#^recipe_workshop_floordecor_misc_meatweek_poleflag$
+	Include_11=edid|#^recipe_workshop_floordecor_misc_meatweek_poleflag
 	Include_12=edid|#^recipe_workshop_floordecor_plasticfruitbowl$
 	Include_13=edid|#^recipe_workshop_floordecor_plushie_peppino$
 	Include_14=edid|#^recipe_workshop_floordecor_plushie_punty$
