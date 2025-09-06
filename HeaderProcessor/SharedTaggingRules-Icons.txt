@@ -53,18 +53,16 @@
 	isFallBack=0
 	fallbackBank=0
 	regex=
-	Include_0=edid|#^bloodpackglowing$
-	Include_1=edid|#^en07_(.*)
+	Include_0=edid|#^en07_glowingmass$
+	Include_1=edid|#^en07_ionizedmeat$
 	Include_2=edid|#^ffz10_bioluminescentfluidpotion(_spoiled)?$
 	Include_3=edid|#^floraspecimen(.*)
-	Include_4=edid|#^glowingoneblood$
-	Include_5=edid|#^milk_brahmin_spoiled$
-	Include_6=edid|#^mirelurkmeatcooked$
-	Include_7=edid|#^mirelurkmeattastyjerky$
-	Include_8=edid|#^mirelurksoftshellmeatcooked$
-	Include_9=edid|#^potion_d01c_insectrepellent$
-	Include_10=edid|#^smores$
-	Include_11=edid|#^spoiledfood_(.*)
+	Include_4=edid|#^milk_brahmin_spoiled$
+	Include_5=edid|#^mirelurkmeatcooked$
+	Include_6=edid|#^mirelurkmeattastyjerky$
+	Include_7=edid|#^mirelurksoftshellmeatcooked$
+	Include_8=edid|#^smores$
+	Include_9=edid|#^spoiledfood_(.*)
 [EndRule]
 
 [StartRule]
@@ -216,7 +214,7 @@
 [EndRule]
 
 [StartRule]
-	Header=Nuka-Cola: %1 @1
+	Header=Nuka-Cola: %2 @1
 	rSig=ALCH
 	fSig=FULL
 	enabled=-1
@@ -229,8 +227,9 @@
 	includeOR=0
 	isFallBack=0
 	fallbackBank=0
-	regex=Nuka-((Cola .*)|(?!(Cola)).*)
+	regex=Nuka-(Cola )?(.*)
 	Include_0=kwd_|DrinkTypeSoda|0013484B
+	Exclude_0=form|NukaCola|0004835D
 [EndRule]
 
 [StartRule]
