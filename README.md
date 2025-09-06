@@ -46,6 +46,18 @@ Some tags here end up incomplete if not used with the related header rule set.
 
 ---
 
+## TODO
+
+* Write better usage notes, especially regarding font/icons
+* Header Processor Rules
+  * Tagging for Plants based on their plant type, like flowers (Both FLOR and ALCH). Relevant mainly for Gamma Green Tea
+  * Tagging for Power Armour plans based on "Tier"
+  * Icon for **Q**uest and **E**vent **UN**i**Q**ues, and tagging for unique items' WEAP records (not just the current INNR WNAM ones)
+  * Icons as prefix for Lunchbox + Scout's banner misc effects
+
+
+---
+
 # Attribution
 
 The main license for this project itself is the MIT License, available in the LICENSE file.  
