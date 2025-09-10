@@ -1557,6 +1557,125 @@
 [EndRule]
 
 [StartRule]
+	Header=>>>SIGHT/SCOPE
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=@f: %3%2%4 %1
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=^(?!(?:(?:Standard )?Recon )?Scope)(?!Standard(?: Glow)? Sights?)(Standard)? ?(Short|Medium|Long)? ?(.*? ?)(?:Sights?|Scope) ?(\(?[a-zA-Z]+\)?)?$
+	Include_0=kwd_|dn_HasScope_GlowSights|00163050
+	Include_1=kwd_|dn_HasScope_IronSights|0016304F
+	Include_2=kwd_|dn_HasScope_IronSightsImproved|00238451
+	Include_3=kwd_|dn_HasScope_NightVision|00163054
+	Include_4=kwd_|dn_HasScope_Recon|00163055
+	Include_5=kwd_|dn_HasScope_ReflexSight|0009430E
+	Include_6=kwd_|dn_HasScope|0002095D
+	Include_7=kwd_|HasScope|0009F425
+	Exclude_0=edid|#^_parent
+	Exclude_1=edid|#^_template
+	Exclude_2=edid|#^cut
+	Exclude_3=edid|#^modcol
+	Exclude_4=edid|#^post
+	Exclude_5=edid|#^zzz
+[EndRule]
+
+[StartRule]
+	Header=@f: %1%2Standard
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=^(?:(?:(?:Standard )?(Recon ))?Scope|Standard (Glow )? ?Sights?)?$
+	Include_0=kwd_|dn_HasScope_GlowSights|00163050
+	Include_1=kwd_|dn_HasScope_IronSights|0016304F
+	Include_2=kwd_|dn_HasScope_IronSightsImproved|00238451
+	Include_3=kwd_|dn_HasScope_NightVision|00163054
+	Include_4=kwd_|dn_HasScope_Recon|00163055
+	Include_5=kwd_|dn_HasScope_ReflexSight|0009430E
+	Include_6=kwd_|dn_HasScope|0002095D
+	Include_7=kwd_|HasScope|0009F425
+	Exclude_0=edid|#^_parent
+	Exclude_1=edid|#^_template
+	Exclude_2=edid|#^cut
+	Exclude_3=edid|#^modcol
+	Exclude_4=edid|#^post
+	Exclude_5=edid|#^zzz
+[EndRule]
+
+[StartRule]
+	Header=Scope
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|HasScope|0009F425
+[EndRule]
+
+[StartRule]
+	Header=Sights
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|dn_HasScope_GlowSights|00163050
+	Include_1=kwd_|dn_HasScope_IronSights|0016304F
+	Include_2=kwd_|dn_HasScope_IronSightsImproved|00238451
+	Include_3=kwd_|dn_HasScope_ReflexSight|0009430E
+	Exclude_0=kwd_|HasScope|0009F425
+[EndRule]
+
+[StartRule]
 	Header=>PLANS
 	rSig=BOOK
 	fSig=FULL
