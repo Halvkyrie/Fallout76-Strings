@@ -53,16 +53,17 @@
 	isFallBack=0
 	fallbackBank=0
 	regex=
-	Include_0=edid|#^en07_glowingmass$
-	Include_1=edid|#^en07_ionizedmeat$
-	Include_2=edid|#^ffz10_bioluminescentfluidpotion(_spoiled)?$
-	Include_3=edid|#^floraspecimen(.*)
-	Include_4=edid|#^milk_brahmin_spoiled$
-	Include_5=edid|#^mirelurkmeatcooked$
-	Include_6=edid|#^mirelurkmeattastyjerky$
-	Include_7=edid|#^mirelurksoftshellmeatcooked$
-	Include_8=edid|#^smores$
-	Include_9=edid|#^spoiledfood_(.*)
+	Include_0=edid|#^e08a_gulpervenom$
+	Include_1=edid|#^en07_glowingmass$
+	Include_2=edid|#^en07_ionizedmeat$
+	Include_3=edid|#^ffz10_bioluminescentfluidpotion(_spoiled)?$
+	Include_4=edid|#^floraspecimen(.*)
+	Include_5=edid|#^milk_brahmin_spoiled$
+	Include_6=edid|#^mirelurkmeatcooked$
+	Include_7=edid|#^mirelurkmeattastyjerky$
+	Include_8=edid|#^mirelurksoftshellmeatcooked$
+	Include_9=edid|#^smores$
+	Include_10=edid|#^spoiledfood_(.*)
 [EndRule]
 
 [StartRule]
