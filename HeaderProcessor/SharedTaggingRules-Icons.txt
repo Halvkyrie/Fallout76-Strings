@@ -1250,7 +1250,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH]MINE
+	Header=%s 
 	rSig=WEAP
 	fSig=FULL
 	enabled=-1
@@ -2178,7 +2178,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s [PH:PowerArmourHelmet]@4
+	Header=%s @4
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -2197,7 +2197,7 @@
 [EndRule]
 
 [StartRule]
-	Header=-[PH:TIER1]
+	Header=
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -2219,7 +2219,7 @@
 [EndRule]
 
 [StartRule]
-	Header=-[PH:TIER2]
+	Header=
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -2239,7 +2239,7 @@
 [EndRule]
 
 [StartRule]
-	Header=-[PH:TIER3]
+	Header=
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -2262,7 +2262,7 @@
 [EndRule]
 
 [StartRule]
-	Header=-[PH:TIER4]
+	Header=
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
@@ -2282,7 +2282,7 @@
 [EndRule]
 
 [StartRule]
-	Header=-[PH:TIER5]
+	Header=
 	rSig=BOOK
 	fSig=FULL
 	enabled=-1
