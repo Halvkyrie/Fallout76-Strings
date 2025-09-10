@@ -1242,10 +1242,11 @@
 	isFallBack=0
 	fallbackBank=0
 	regex=
-	Include_0=kwd_|WeaponTypeMine|0010C414
+	Include_0=kwd_|WeaponTypeGrenade|0010C415
 	Exclude_0=kwd_|UI_WeaponTypeNukaGrenade|003CFD7C
 	Exclude_1=kwd_|UI_WeaponTypeNukaQuantumGrenade|006DDDB5
-	Exclude_2=kwd_|WeaponTypeThrowingKnife|003879A4
+	Exclude_2=kwd_|WeaponTypeMine|0010C414
+	Exclude_3=kwd_|WeaponTypeThrowingKnife|003879A4
 [EndRule]
 
 [StartRule]
