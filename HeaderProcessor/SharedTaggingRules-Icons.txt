@@ -1457,6 +1457,29 @@
 [EndRule]
 
 [StartRule]
+	Header=%3: %2 %1
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=^([a-zA-Z- ]*?(?!Very)) ?((?:Very )?[a-zA-Z-]+) ([a-zA-Z-]+)$
+	Include_0=edid|#mod(.*)barrel(.*)
+	Exclude_0=edid|#^_parent
+	Exclude_1=edid|#^_template
+	Exclude_2=edid|#^cut
+	Exclude_3=edid|#^post
+	Exclude_4=edid|#^zzz
+[EndRule]
+
+[StartRule]
 	Header=>>>GRIP
 	rSig=OMOD
 	fSig=FULL
@@ -1484,11 +1507,13 @@
 	hasCompo=0
 	preProcess=0
 	fullReplace=0
-	includeOR=0
+	includeOR=-1
 	isFallBack=0
 	fallbackBank=0
 	regex=^((?!No)(?!Full)(?!Short)[a-zA-Z- ']+?) (?:Full |Short )?(?:Stock|Grip)$
 	Include_0=ekwd|dn_hasgrip
+	Include_1=ekwd|weapontypepistol
+	Include_2=ekwd|weapontyperifle
 	Exclude_0=edid|#^_parent
 	Exclude_1=edid|#^_template
 	Exclude_2=edid|#^cut
@@ -1555,6 +1580,67 @@
 	Include_2=kwd_|dn_HasGrip_Pistol|00025018
 	Include_3=kwd_|WeaponTypePistol|0004A0A0
 	Exclude_0=kwd_|dn_HasGrip_Rifle|00025019
+[EndRule]
+
+[StartRule]
+	Header=@f %1
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=-1
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=^((?!No)(?!Full)(?!Short)[a-zA-Z- ']+?) (?:Full |Short )?(?:Stock|Grip)$
+	Include_0=edid|#mod(.*)grip(.*)
+	Include_1=edid|#mod(.*)stock(.*)
+	Exclude_0=edid|#^_parent
+	Exclude_1=edid|#^_template
+	Exclude_2=edid|#^cut
+	Exclude_3=edid|#^post
+	Exclude_4=edid|#^zzz
+[EndRule]
+
+[StartRule]
+	Header=Stock
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=-1
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=$(?!No Stock).*(Stock).*
+	Include_0=edid|#mod(.*)grip(.*)
+	Include_1=edid|#mod(.*)stock(.*)
+[EndRule]
+
+[StartRule]
+	Header=Grip
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=-1
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=0
+	regex=.*(Grip).*
+	Include_0=edid|#mod(.*)grip(.*)
 [EndRule]
 
 [StartRule]
