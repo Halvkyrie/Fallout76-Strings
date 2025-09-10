@@ -1242,11 +1242,28 @@
 	isFallBack=0
 	fallbackBank=0
 	regex=
-	Include_0=kwd_|WeaponTypeGrenade|0010C415
-	Include_1=kwd_|WeaponTypeMine|0010C414
+	Include_0=kwd_|WeaponTypeMine|0010C414
 	Exclude_0=kwd_|UI_WeaponTypeNukaGrenade|003CFD7C
 	Exclude_1=kwd_|UI_WeaponTypeNukaQuantumGrenade|006DDDB5
 	Exclude_2=kwd_|WeaponTypeThrowingKnife|003879A4
+[EndRule]
+
+[StartRule]
+	Header=%s [PH]MINE
+	rSig=WEAP
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|WeaponTypeMine|0010C414
 [EndRule]
 
 [StartRule]
@@ -1267,7 +1284,6 @@
 	Include_0=kwd_|UI_WeaponTypeNukaGrenade|003CFD7C
 	Include_1=kwd_|UI_WeaponTypeNukaQuantumGrenade|006DDDB5
 	Include_2=kwd_|WeaponTypeGrenade|0010C415
-	Include_3=kwd_|WeaponTypeMine|0010C414
 	Exclude_0=kwd_|WeaponTypeThrowingKnife|003879A4
 [EndRule]
 
@@ -1362,6 +1378,64 @@
 	Include_4=form|Headwear_BeerHat|003621BC
 	Include_5=form|Headwear_Sheepsquatch_Imposter_Helmet|003FB9AE
 	Include_6=form|Headwear_SheepsquatchMascotHead|00469D1A
+[EndRule]
+
+[StartRule]
+	Header=>OMOD
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>WEAPONS
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%3: %2 %1
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=^([a-zA-Z- ]*?(?!Very)) ?((?:Very )?[a-zA-Z-]+\b) ([a-zA-Z-]+)$
+	Include_0=ekwd|dn_hasbarrel
+	Include_1=ekwd|dn_hasprojectile
+	Exclude_0=edid|#^_parent
+	Exclude_1=edid|#^_template
+	Exclude_2=edid|#^cut
+	Exclude_3=edid|#^post
+	Exclude_4=edid|#^zzz
 [EndRule]
 
 [StartRule]
