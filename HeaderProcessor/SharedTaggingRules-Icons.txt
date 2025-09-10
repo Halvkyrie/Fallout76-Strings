@@ -1415,6 +1415,23 @@
 [EndRule]
 
 [StartRule]
+	Header=>>>BARREL/MUZZLE
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
 	Header=%3: %2 %1
 	rSig=OMOD
 	fSig=FULL
@@ -1436,6 +1453,107 @@
 	Exclude_2=edid|#^cut
 	Exclude_3=edid|#^post
 	Exclude_4=edid|#^zzz
+[EndRule]
+
+[StartRule]
+	Header=>>>GRIP
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=@f: %1
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=^((?!No)(?!Full)(?!Short)[a-zA-Z- ']+?) (?:Full |Short )?(?:Stock|Grip)$
+	Include_0=ekwd|dn_hasgrip
+	Exclude_0=edid|#^_parent
+	Exclude_1=edid|#^_template
+	Exclude_2=edid|#^cut
+	Exclude_3=edid|#^post
+	Exclude_4=edid|#^zzz
+[EndRule]
+
+[StartRule]
+	Header=Short Stock
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|dn_HasGrip_StockShort|000ECE7D
+[EndRule]
+
+[StartRule]
+	Header=Full Stock
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|dn_HasGrip_Rifle|00025019
+	Include_1=kwd_|dn_HasGrip_StockMarksmans|00163045
+	Include_2=kwd_|WeaponTypeRifle|0004A0A1
+	Exclude_0=kwd_|dn_HasGrip_StockShort|000ECE7D
+[EndRule]
+
+[StartRule]
+	Header=Grip
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|dn_HasGrip_Better1|00100E39
+	Include_1=kwd_|dn_HasGrip_Better2|00163044
+	Include_2=kwd_|dn_HasGrip_Pistol|00025018
+	Include_3=kwd_|WeaponTypePistol|0004A0A0
+	Exclude_0=kwd_|dn_HasGrip_Rifle|00025019
 [EndRule]
 
 [StartRule]
