@@ -1428,7 +1428,7 @@
 	includeOR=-1
 	isFallBack=0
 	fallbackBank=0
-	regex=^([a-zA-Z- ]*?(?!Very)) ?((?:Very )?[a-zA-Z-]+\b) ([a-zA-Z-]+)$
+	regex=^([a-zA-Z- ]*?(?!Very)) ?((?:Very )?[a-zA-Z-]+) ([a-zA-Z-]+)$
 	Include_0=ekwd|dn_hasbarrel
 	Include_1=ekwd|dn_hasprojectile
 	Exclude_0=edid|#^_parent
