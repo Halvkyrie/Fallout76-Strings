@@ -912,7 +912,7 @@
 	isFallBack=0
 	fallbackBank=0
 	regex=
-	Include_0=edid|#^score_lunchbox_(a-z)*spell
+	Include_0=edid|#^score_lunchbox_[a-z]*spell
 	Exclude_0=edid|#^score_lunchbox_xpspell
 [EndRule]
 
