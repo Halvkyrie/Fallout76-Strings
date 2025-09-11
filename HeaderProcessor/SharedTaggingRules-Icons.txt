@@ -898,7 +898,7 @@
 [EndRule]
 
 [StartRule]
-	Header= 
+	Header= %s
 	rSig=SPEL
 	fSig=FULL
 	enabled=-1
