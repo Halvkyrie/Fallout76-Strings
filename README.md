@@ -26,8 +26,12 @@ This aims to strip away all the unnecessary parts of the dynamic naming system f
 Due to technical limitations, certain weapons will still have their name affected by things like barrel/grip combos. As an example an Enclave Plasma Gun can end up as Enclave Plasma Pistol, Enclave Plasma Rifle, and Enclave Plasma Gun.  
 This all could be changed in the ESM, but that's off limits. Therefore it has been handled this way  
 
+### Formatting Rules
 
-### Shared Tagging Header Rules
+Aims to improve formatting of some items to have more convenient sorting/differentiating  
+Some of these rules may need improvement / are in an incomplete state. In particular the OMOD rules are not quite complete/perfect
+
+### Shared Tagging Rules
 
 This is the more personalized set of tagging rules. These are for appending a tag at the end of item names to streamline Invent-O-Matic usage.  
 This covers a lot of items like common, seasonal, nontradeable ++ plans, chems, misc items, thrown weapons junk. Many are categorized so they are easy to filter for dropping.  
@@ -40,6 +44,8 @@ A list of the Dictionaries and a brief overlook of what they are for
 
 ### Shared Strings
 
+NOTE: All the Tagging done via this dictionary is now removed and handled by the shared tagging rules. What remains here is a couple of formatting changes and individual string edits  
+
 Much like the Shared Tagging Header Rules, this is the personalized dictionary. Similarly made for tagging item for streamlined Invent-O-Matic use, but with some other tweaks too.  
 Certain items, **C**onstructible **OBJ**ects etc have been edited to have more unified naming for better sorting. Some items have rarity as a comment.  
 Some tags here end up incomplete if not used with the related header rule set.  
@@ -51,7 +57,8 @@ Some tags here end up incomplete if not used with the related header rule set.
 * Write better usage notes, especially regarding font/icons
 * Header Processor Rules
   * Tagging for Plants based on their plant type, like flowers (Both FLOR and ALCH). Relevant mainly for Gamma Green Tea
-  * Tagging for Power Armour plans based on "Tier"
+  * ~~Tagging for Power Armour plans based on "Tier"~~
+    * Done ☺
   * Icon for **Q**uest and **E**vent **UN**i**Q**ues, and tagging for unique items' WEAP records (not just the current INNR WNAM ones)
   * Icons as prefix for Lunchbox + Scout's banner misc effects
 
