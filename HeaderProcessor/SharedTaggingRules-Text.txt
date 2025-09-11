@@ -53,16 +53,17 @@
 	isFallBack=0
 	fallbackBank=0
 	regex=
-	Include_0=edid|#^en07_glowingmass$
-	Include_1=edid|#^en07_ionizedmeat$
-	Include_2=edid|#^ffz10_bioluminescentfluidpotion(_spoiled)?$
-	Include_3=edid|#^floraspecimen(.*)
-	Include_4=edid|#^milk_brahmin_spoiled$
-	Include_5=edid|#^mirelurkmeatcooked$
-	Include_6=edid|#^mirelurkmeattastyjerky$
-	Include_7=edid|#^mirelurksoftshellmeatcooked$
-	Include_8=edid|#^smores$
-	Include_9=edid|#^spoiledfood_(.*)
+	Include_0=edid|#^e08a_gulpervenom$
+	Include_1=edid|#^en07_glowingmass$
+	Include_2=edid|#^en07_ionizedmeat$
+	Include_3=edid|#^ffz10_bioluminescentfluidpotion(_spoiled)?$
+	Include_4=edid|#^floraspecimen(.*)
+	Include_5=edid|#^milk_brahmin_spoiled$
+	Include_6=edid|#^mirelurkmeatcooked$
+	Include_7=edid|#^mirelurkmeattastyjerky$
+	Include_8=edid|#^mirelurksoftshellmeatcooked$
+	Include_9=edid|#^smores$
+	Include_10=edid|#^spoiledfood_(.*)
 [EndRule]
 
 [StartRule]
@@ -1227,7 +1228,7 @@
 [EndRule]
 
 [StartRule]
-	Header=%s - TX
+	Header=%s - TXG
 	rSig=WEAP
 	fSig=FULL
 	enabled=-1
@@ -1242,14 +1243,32 @@
 	fallbackBank=0
 	regex=
 	Include_0=kwd_|WeaponTypeGrenade|0010C415
-	Include_1=kwd_|WeaponTypeMine|0010C414
 	Exclude_0=kwd_|UI_WeaponTypeNukaGrenade|003CFD7C
 	Exclude_1=kwd_|UI_WeaponTypeNukaQuantumGrenade|006DDDB5
-	Exclude_2=kwd_|WeaponTypeThrowingKnife|003879A4
+	Exclude_2=kwd_|WeaponTypeMine|0010C414
+	Exclude_3=kwd_|WeaponTypeThrowingKnife|003879A4
 [EndRule]
 
 [StartRule]
-	Header=%s - TX
+	Header=%s - TXM
+	rSig=WEAP
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|WeaponTypeMine|0010C414
+[EndRule]
+
+[StartRule]
+	Header=%s - TXN
 	rSig=WEAP
 	fSig=FULL
 	enabled=-1
@@ -1266,7 +1285,6 @@
 	Include_0=kwd_|UI_WeaponTypeNukaGrenade|003CFD7C
 	Include_1=kwd_|UI_WeaponTypeNukaQuantumGrenade|006DDDB5
 	Include_2=kwd_|WeaponTypeGrenade|0010C415
-	Include_3=kwd_|WeaponTypeMine|0010C414
 	Exclude_0=kwd_|WeaponTypeThrowingKnife|003879A4
 [EndRule]
 
@@ -1845,6 +1863,150 @@
 	Include_19=edid|#^recipe_workshop_walldecor_taxidermy_tick$
 	Include_20=kwd_|ObjectTypeRecipe|003E1567
 	Exclude_0=kwd_|NonPlayerTradable|00499F7A
+[EndRule]
+
+[StartRule]
+	Header=>>POWER ARMOUR
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%s - PA@4
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+	Include_0=edid|#^(rd01_)?recipe_(xpd_)?mod_powerarmor_[a-z0-9]*_[a-z]*_misc_
+	Include_1=kwd_|ObjectTypeRecipe|003E1567
+[EndRule]
+
+[StartRule]
+	Header=1
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=4
+	regex=
+	Include_0=kwd_|dn_HasMisc_ExplVent|00238421
+	Include_1=kwd_|dn_HasMisc_Int|0023841C
+	Include_2=kwd_|dn_HasMisc_Optimized|00238419
+	Include_3=kwd_|dn_HasMisc_Sensor|0023841E
+	Include_4=kwd_|dn_HasMisc_Str|0023842B
+[EndRule]
+
+[StartRule]
+	Header=2
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=4
+	regex=
+	Include_0=kwd_|dn_HasMisc_Bleed|00238418
+	Include_1=kwd_|dn_HasMisc_MedicPump|00238429
+	Include_2=kwd_|dn_HasMisc_Unarmed|0023841A
+[EndRule]
+
+[StartRule]
+	Header=3
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=4
+	regex=
+	Include_0=kwd_|dn_HasMisc_APRegen|0023841F
+	Include_1=kwd_|dn_HasMisc_BatRegen|00238424
+	Include_2=kwd_|dn_HasMisc_Cleanser|00238425
+	Include_3=kwd_|dn_HasMisc_DMGShield|00238426
+	Include_4=kwd_|dn_HasMisc_Kinetic|00238428
+	Include_5=kwd_|dn_HasMisc_ShockDmg|00238431
+[EndRule]
+
+[StartRule]
+	Header=4
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=4
+	regex=
+	Include_0=kwd_|dn_HasMisc_Emergency|00238427
+	Include_1=kwd_|dn_HasMisc_OptimizedServos|00238422
+	Include_2=kwd_|dn_HasMisc_SprintBoost|00238423
+[EndRule]
+
+[StartRule]
+	Header=5
+	rSig=BOOK
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=4
+	regex=
+	Include_0=kwd_|dn_HasMisc_Carry|00238420
+	Include_1=kwd_|dn_HasMisc_DetectLife|0023841B
+	Include_2=kwd_|dn_HasMisc_JetPack|0023842F
+	Include_3=kwd_|dn_HasMisc_Reactive|0023842A
+	Include_4=kwd_|dn_HasMisc_StealthBoy|00238430
+	Include_5=kwd_|dn_HasMisc_Tesla|0023842C
 [EndRule]
 
 [StartRule]

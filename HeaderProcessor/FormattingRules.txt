@@ -399,3 +399,384 @@
 	Include_0=edid|#^sse_armo_headwear_flowercrown_(.*)$
 [EndRule]
 
+[StartRule]
+	Header=>OMOD
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>WEAPONS
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=>>>BARREL/MUZZLE
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=%3: %2 %1
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=^([a-zA-Z- ]*?(?!Very)) ?((?:Very )?[a-zA-Z-]+) ([a-zA-Z-]+)$
+	Include_0=ekwd|dn_hasbarrel
+	Include_1=ekwd|dn_hasprojectile
+	Exclude_0=edid|#^_parent
+	Exclude_1=edid|#^_template
+	Exclude_2=edid|#^cut
+	Exclude_3=edid|#^post
+	Exclude_4=edid|#^zzz
+[EndRule]
+
+[StartRule]
+	Header=%3: %2 %1
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=^([a-zA-Z- ]*?(?!Very)) ?((?:Very )?[a-zA-Z-]+) ([a-zA-Z-]+)$
+	Include_0=edid|#mod(.*)barrel(.*)
+	Exclude_0=edid|#^_parent
+	Exclude_1=edid|#^_template
+	Exclude_2=edid|#^cut
+	Exclude_3=edid|#^post
+	Exclude_4=edid|#^zzz
+[EndRule]
+
+[StartRule]
+	Header=>>>GRIP
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=@f: %1
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=^((?!No)(?!Full)(?!Short)[a-zA-Z- ']+?) (?:Full |Short )?(?:Stock|Grip)$
+	Include_0=ekwd|dn_hasgrip
+	Include_1=ekwd|weapontypepistol
+	Include_2=ekwd|weapontyperifle
+	Exclude_0=edid|#^_parent
+	Exclude_1=edid|#^_template
+	Exclude_2=edid|#^cut
+	Exclude_3=edid|#^post
+	Exclude_4=edid|#^zzz
+[EndRule]
+
+[StartRule]
+	Header=Short Stock
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|dn_HasGrip_StockShort|000ECE7D
+[EndRule]
+
+[StartRule]
+	Header=Full Stock
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|dn_HasGrip_Rifle|00025019
+	Include_1=kwd_|dn_HasGrip_StockMarksmans|00163045
+	Include_2=kwd_|WeaponTypeRifle|0004A0A1
+	Exclude_0=kwd_|dn_HasGrip_StockShort|000ECE7D
+[EndRule]
+
+[StartRule]
+	Header=Grip
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|dn_HasGrip_Better1|00100E39
+	Include_1=kwd_|dn_HasGrip_Better2|00163044
+	Include_2=kwd_|dn_HasGrip_Pistol|00025018
+	Include_3=kwd_|WeaponTypePistol|0004A0A0
+	Exclude_0=kwd_|dn_HasGrip_Rifle|00025019
+[EndRule]
+
+[StartRule]
+	Header=@f %1
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=-1
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=^((?!No)(?!Full)(?!Short)[a-zA-Z- ']+?) (?:Full |Short )?(?:Stock|Grip)$
+	Include_0=edid|#mod(.*)grip(.*)
+	Include_1=edid|#mod(.*)stock(.*)
+	Exclude_0=edid|#^_parent
+	Exclude_1=edid|#^_template
+	Exclude_2=edid|#^cut
+	Exclude_3=edid|#^post
+	Exclude_4=edid|#^zzz
+[EndRule]
+
+[StartRule]
+	Header=Stock
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=-1
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=$(?!No Stock).*(Stock).*
+	Include_0=edid|#mod(.*)grip(.*)
+	Include_1=edid|#mod(.*)stock(.*)
+[EndRule]
+
+[StartRule]
+	Header=Grip
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=-1
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=0
+	regex=.*(Grip).*
+	Include_0=edid|#mod(.*)grip(.*)
+[EndRule]
+
+[StartRule]
+	Header=>>>SIGHT/SCOPE
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=0
+	fallbackBank=0
+	regex=
+[EndRule]
+
+[StartRule]
+	Header=@f: %3%2%4 %1
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=^(?!(?:(?:Standard )?Recon )?Scope)(?!Standard(?: Glow)? Sights?)(Standard)? ?(Short|Medium|Long)? ?(.*? ?)(?:Sights?|Scope) ?(\(?[a-zA-Z]+\)?)?$
+	Include_0=kwd_|dn_HasScope_GlowSights|00163050
+	Include_1=kwd_|dn_HasScope_IronSights|0016304F
+	Include_2=kwd_|dn_HasScope_IronSightsImproved|00238451
+	Include_3=kwd_|dn_HasScope_NightVision|00163054
+	Include_4=kwd_|dn_HasScope_Recon|00163055
+	Include_5=kwd_|dn_HasScope_ReflexSight|0009430E
+	Include_6=kwd_|dn_HasScope|0002095D
+	Include_7=kwd_|HasScope|0009F425
+	Exclude_0=edid|#^_parent
+	Exclude_1=edid|#^_template
+	Exclude_2=edid|#^cut
+	Exclude_3=edid|#^modcol
+	Exclude_4=edid|#^post
+	Exclude_5=edid|#^zzz
+[EndRule]
+
+[StartRule]
+	Header=@f: %1%2Standard
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=0
+	fallbackBank=0
+	regex=^(?:(?:(?:Standard )?(Recon ))?Scope|Standard (Glow )? ?Sights?)?$
+	Include_0=kwd_|dn_HasScope_GlowSights|00163050
+	Include_1=kwd_|dn_HasScope_IronSights|0016304F
+	Include_2=kwd_|dn_HasScope_IronSightsImproved|00238451
+	Include_3=kwd_|dn_HasScope_NightVision|00163054
+	Include_4=kwd_|dn_HasScope_Recon|00163055
+	Include_5=kwd_|dn_HasScope_ReflexSight|0009430E
+	Include_6=kwd_|dn_HasScope|0002095D
+	Include_7=kwd_|HasScope|0009F425
+	Exclude_0=edid|#^_parent
+	Exclude_1=edid|#^_template
+	Exclude_2=edid|#^cut
+	Exclude_3=edid|#^modcol
+	Exclude_4=edid|#^post
+	Exclude_5=edid|#^zzz
+[EndRule]
+
+[StartRule]
+	Header=Scope
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=0
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|HasScope|0009F425
+[EndRule]
+
+[StartRule]
+	Header=Sights
+	rSig=OMOD
+	fSig=FULL
+	enabled=-1
+	tagID=default
+	noKW=0
+	anyKW=0
+	hasCompo=0
+	preProcess=0
+	fullReplace=0
+	includeOR=-1
+	isFallBack=-1
+	fallbackBank=0
+	regex=
+	Include_0=kwd_|dn_HasScope_GlowSights|00163050
+	Include_1=kwd_|dn_HasScope_IronSights|0016304F
+	Include_2=kwd_|dn_HasScope_IronSightsImproved|00238451
+	Include_3=kwd_|dn_HasScope_ReflexSight|0009430E
+	Exclude_0=kwd_|HasScope|0009F425
+[EndRule]
+
