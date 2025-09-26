@@ -62,6 +62,9 @@ Some tags here end up incomplete if not used with the related header rule set.
   * Icon for **Q**uest and **E**vent **UN**i**Q**ues, and tagging for unique items' WEAP records (not just the current INNR WNAM ones)
   * Icons as prefix for Lunchbox + Scout's banner misc effects
 
+## Known Issues
+
+* `Plan: Kitchen Chairs` is not tagged as workshop plan
 
 ---
 
