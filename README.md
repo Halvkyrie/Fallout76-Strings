@@ -60,6 +60,8 @@ Some tags here end up incomplete if not used with the related header rule set.
   * ~~Tagging for Power Armour plans based on "Tier"~~
     * Done ☺
   * Icon for **Q**uest and **E**vent **UN**i**Q**ues, and tagging for unique items' WEAP records (not just the current INNR WNAM ones)
+  * Add Chem/Aid icon to Glowing Blood
+  * Remove Plan: Jewelry Stand Flair Display from non-tradable tagged items
   * Icons as prefix for Lunchbox + Scout's banner misc effects
 
 ## Known Issues
