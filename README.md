@@ -62,6 +62,7 @@ Some tags here end up incomplete if not used with the related header rule set.
   * Icon for **Q**uest and **E**vent **UN**i**Q**ues, and tagging for unique items' WEAP records (not just the current INNR WNAM ones)
   * Add Chem/Aid icon to Glowing Blood
   * Remove Plan: Jewelry Stand Flair Display from non-tradable tagged items
+  * Add Seasonal tags/icons to Mischief Night plans
   * Icons as prefix for Lunchbox + Scout's banner misc effects
 
 ## Known Issues
